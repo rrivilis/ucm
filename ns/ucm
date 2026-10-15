@@ -1,0 +1,621 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix org:     <http://www.w3.org/ns/org#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix ucm:     <https://www.w3.org/ns/ucm#> .
+
+<https://www.w3.org/ns/ucm>
+  a owl:Ontology ;
+  dcterms:title "Unified Care Model (UCM) Vocabulary"@en ;
+  dcterms:description "UCM is an RDF vocabulary providing a common semantic foundation for achieving semantic interoperability across healthcare and human-service ecosystems. It serves as a semantic bridge that enables standards, ontologies, information models, and data models developed by independent communities to communicate with a shared understanding of information while preserving their respective semantics."@en ;
+  dcterms:created "2025-01-01"^^xsd:date ;
+  dcterms:modified "2026-10-15"^^xsd:date ;
+  dcterms:creator <https://www.w3.org/community/ucm/> ;
+  dcterms:publisher [
+      a org:Organization ;
+      foaf:homepage <https://www.w3.org/> ;
+      foaf:name "World Wide Web Consortium (W3C)" ;
+    ] ;
+  dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcterms:isPartOf <https://www.w3.org/community/ucm/> ;
+  owl:versionInfo "0.0.1" ;
+  owl:versionIRI <https://www.w3.org/ns/ucm/0.0.1> ;
+  rdfs:label "Unified Care Model (UCM) Vocabulary"@en ;
+  rdfs:comment "UCM is an RDF vocabulary providing a common semantic foundation for achieving semantic interoperability across healthcare and human-service ecosystems."@en ;
+  rdfs:seeAlso <https://www.w3.org/community/ucm/> ;
+  vann:preferredNamespacePrefix "ucm" ;
+  vann:preferredNamespaceUri "https://www.w3.org/ns/ucm#" ;
+  foaf:homepage <https://www.w3.org/community/ucm/> ;
+.
+
+#################################################################
+#    Core Classes
+#################################################################
+
+ucm:Entity
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Entity"@en ;
+  rdfs:comment "A stable, independently identifiable semantic thing."@en ;
+  skos:definition "A stable, independently identifiable semantic thing."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Person
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Entity ;
+  rdfs:label "Person"@en ;
+  rdfs:comment "A human individual with the social context of a person."@en ;
+  skos:definition "A human individual with the social context of a person."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Organization
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Entity ;
+  rdfs:label "Organization"@en ;
+  rdfs:comment "An operational or governance-oriented social entity maintaining continuity independent of membership changes."@en ;
+  skos:definition "An operational or governance-oriented social entity maintaining continuity independent of membership changes."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Process
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Process"@en ;
+  rdfs:comment "A bounded interaction or activity occurring over time."@en ;
+  skos:definition "A bounded interaction or activity occurring over time."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Participation
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Participation"@en ;
+  rdfs:comment "The contextual involvement of an Entity within a Process and Semantic Context."@en ;
+  skos:definition "The contextual involvement of an Entity within a Process and Semantic Context."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Role
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Role"@en ;
+  rdfs:comment "A contextual, anti-rigid classification assumed through participation."@en ;
+  skos:definition "A contextual, anti-rigid classification assumed through participation."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SemanticContext
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Semantic Context"@en ;
+  rdfs:comment "An interpretive environment, governance scope, or applicability boundary."@en ;
+  skos:definition "An interpretive environment, governance scope, or applicability boundary."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Statement
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Statement"@en ;
+  rdfs:comment "An informational assertion, finding, determination, or conclusion."@en ;
+  skos:definition "An informational assertion, finding, determination, or conclusion."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SocialGroupEntity
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Entity ;
+  rdfs:label "Social Group Entity"@en ;
+  rdfs:comment "A collective grouping of participating entities."@en ;
+  skos:definition "A collective grouping of participating entities."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Membership
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Membership"@en ;
+  rdfs:comment "A contextual membership relationship between an Entity and a Social Group Entity."@en ;
+  skos:definition "A contextual membership relationship between an Entity and a Social Group Entity."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:MembershipCriteria
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Membership Criteria"@en ;
+  rdfs:comment "Rules or conditions defining membership within a Social Group Entity."@en ;
+  skos:definition "Rules or conditions defining membership within a Social Group Entity."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:DefinitionArtifact
+  a rdfs:Class, owl:Class ;
+  rdfs:label "Definition Artifact"@en ;
+  rdfs:comment "A ruleset, policy definition, constraint, or governance artifact."@en ;
+  skos:definition "A ruleset, policy definition, constraint, or governance artifact."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Encounter
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Process ;
+  rdfs:label "Encounter"@en ;
+  rdfs:comment "A bounded contextual interaction process."@en ;
+  skos:definition "A bounded contextual interaction process."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:InformationArtifact
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Entity ;
+  rdfs:label "Information Artifact"@en ;
+  rdfs:comment "A logical information abstraction or computable information object."@en ;
+  skos:definition "A logical information abstraction or computable information object."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Location
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Entity ;
+  rdfs:label "Location"@en ;
+  rdfs:comment "A geospatial or administrative location."@en ;
+  skos:definition "A geospatial or administrative location."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+#################################################################
+#    Domain Subclasses
+#################################################################
+
+ucm:ClinicalEncounter
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Encounter ;
+  rdfs:label "Clinical Encounter"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SocialCareInteraction
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Process ;
+  rdfs:label "Social Care Interaction"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:CareCoordinationInteraction
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Process ;
+  rdfs:label "Care Coordination Interaction"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:HousingAssessment
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Process ;
+  rdfs:label "Housing Assessment"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:EligibilityDetermination
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Process ;
+  rdfs:label "Eligibility Determination"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:CareTeam
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SocialGroupEntity ;
+  rdfs:label "Care Team"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Household
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SocialGroupEntity ;
+  rdfs:label "Household"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:CommunityGroup
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SocialGroupEntity ;
+  rdfs:label "Community Group"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ClinicalStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Statement ;
+  rdfs:label "Clinical Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:DiagnosisStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:ClinicalStatement ;
+  rdfs:label "Diagnosis Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ObservationStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:ClinicalStatement ;
+  rdfs:label "Observation Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SocialCareStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Statement ;
+  rdfs:label "Social Care Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:HousingStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Statement ;
+  rdfs:label "Housing Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:HousingEligibilityStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:HousingStatement ;
+  rdfs:label "Housing Eligibility Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:CareCoordinationStatement
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Statement ;
+  rdfs:label "Care Coordination Statement"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ClinicalCareContext
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SemanticContext ;
+  rdfs:label "Clinical Care Context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SocialCareContext
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SemanticContext ;
+  rdfs:label "Social Care Context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:BehavioralHealthContext
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SemanticContext ;
+  rdfs:label "Behavioral Health Context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:HousingContext
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SemanticContext ;
+  rdfs:label "Housing Context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:HousingEligibilityContext
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:HousingContext ;
+  rdfs:label "Housing Eligibility Context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:PublicHealthContext
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SemanticContext ;
+  rdfs:label "Public Health Context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SubjectRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Role ;
+  rdfs:label "Subject Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:PatientRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SubjectRole ;
+  rdfs:label "Patient Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ClientRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SubjectRole ;
+  rdfs:label "Client Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ResidentRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SubjectRole ;
+  rdfs:label "Resident Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:BeneficiaryRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:SubjectRole ;
+  rdfs:label "Beneficiary Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ProviderRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Role ;
+  rdfs:label "Provider Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:CaregiverRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Role ;
+  rdfs:label "Caregiver Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:CoordinatorRole
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Role ;
+  rdfs:label "Coordinator Role"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:EligibilityRuleset
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:DefinitionArtifact ;
+  rdfs:label "Eligibility Ruleset"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:PolicyDefinition
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:DefinitionArtifact ;
+  rdfs:label "Policy Definition"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:ProgramDefinition
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:DefinitionArtifact ;
+  rdfs:label "Program Definition"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:SemanticConstraint
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:DefinitionArtifact ;
+  rdfs:label "Semantic Constraint"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:Device
+  a rdfs:Class, owl:Class ;
+  rdfs:subClassOf ucm:Entity ;
+  rdfs:label "Device"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+#################################################################
+#    Object Properties
+#################################################################
+
+ucm:hasParticipant
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Process ;
+  rdfs:range ucm:Participation ;
+  rdfs:label "has participant"@en ;
+  rdfs:comment "Relates a Process to a Participation."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:participatingEntity
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range ucm:Entity ;
+  rdfs:label "participating entity"@en ;
+  rdfs:comment "Relates a Participation to the Entity that participates."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:participatesThrough
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Entity ;
+  rdfs:range ucm:Participation ;
+  rdfs:label "participates through"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:occursWithin
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range ucm:Process ;
+  rdfs:label "occurs within"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:assumesRole
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range ucm:Role ;
+  rdfs:label "assumes role"@en ;
+  rdfs:comment "Relates a Participation to the Role assumed by the participating entity."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:scopedBy
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range ucm:SemanticContext ;
+  rdfs:label "scoped by"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:participationContext
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range ucm:SemanticContext ;
+  rdfs:label "participation context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:madeWithinContext
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Statement ;
+  rdfs:range ucm:SemanticContext ;
+  rdfs:label "made within context"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:statementSubject
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Statement ;
+  rdfs:range ucm:Participation ;
+  rdfs:label "statement subject"@en ;
+  rdfs:comment "Relates a Statement to the contextual Participation it is about."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:generatedByProcess
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Statement ;
+  rdfs:range ucm:Process ;
+  rdfs:label "generated by process"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:hasMember
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:SocialGroupEntity ;
+  rdfs:range ucm:Entity ;
+  rdfs:label "has member"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:memberOf
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Entity ;
+  rdfs:range ucm:SocialGroupEntity ;
+  rdfs:label "member of"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:hasMembership
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Entity ;
+  rdfs:range ucm:Membership ;
+  rdfs:label "has membership"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:membershipIn
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Membership ;
+  rdfs:range ucm:SocialGroupEntity ;
+  rdfs:label "membership in"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:definedByCriteria
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:SocialGroupEntity ;
+  rdfs:range ucm:MembershipCriteria ;
+  rdfs:label "defined by criteria"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:qualifiesForMembership
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Entity ;
+  rdfs:range ucm:MembershipCriteria ;
+  rdfs:label "qualifies for membership"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:definedByArtifact
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:SemanticContext ;
+  rdfs:range ucm:DefinitionArtifact ;
+  rdfs:label "defined by artifact"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:locatedAt
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Entity ;
+  rdfs:range ucm:Location ;
+  rdfs:label "located at"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:affiliatedWith
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:Person ;
+  rdfs:range ucm:Organization ;
+  rdfs:label "affiliated with"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:hasPatient
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:ClinicalEncounter ;
+  rdfs:range ucm:Person ;
+  rdfs:label "has patient"@en ;
+  rdfs:comment "Convenience projection derived from participation semantics."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:hasClient
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:SocialCareInteraction ;
+  rdfs:range ucm:Person ;
+  rdfs:label "has client"@en ;
+  rdfs:comment "Convenience projection derived from participation semantics."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:hasResident
+  a owl:ObjectProperty ;
+  rdfs:domain ucm:HousingAssessment ;
+  rdfs:range ucm:Person ;
+  rdfs:label "has resident"@en ;
+  rdfs:comment "Convenience projection derived from participation semantics."@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+#################################################################
+#    Datatype Properties
+#################################################################
+
+ucm:validFrom
+  a owl:DatatypeProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range xsd:dateTime ;
+  rdfs:label "valid from"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:validTo
+  a owl:DatatypeProperty ;
+  rdfs:domain ucm:Participation ;
+  rdfs:range xsd:dateTime ;
+  rdfs:label "valid to"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
+
+ucm:statementDate
+  a owl:DatatypeProperty ;
+  rdfs:domain ucm:Statement ;
+  rdfs:range xsd:dateTime ;
+  rdfs:label "statement date"@en ;
+  rdfs:isDefinedBy <https://www.w3.org/ns/ucm> ;
+.
