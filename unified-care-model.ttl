@@ -185,6 +185,71 @@ ucm:statementSubject rdf:type owl:ObjectProperty ;
                      rdfs:comment "Relates a statement to the contextual participation it is about." ;
                      rdfs:label "statement subject" .
 
+###  urn:w3c:cg:ucm#hasLifecycleState
+ucm:hasLifecycleState rdf:type owl:ObjectProperty ;
+                    rdfs:domain ucm:Process ;
+                    rdfs:range skos:Concept ;
+                    rdfs:label "has lifecycle state" ;
+                    rdfs:comment "Relates a process to a lifecycle state." .
+
+###  urn:w3c:cg:ucm#hasActivityFocus
+ucm:hasActivityFocus rdf:type owl:ObjectProperty ;
+                    rdfs:domain ucm:Process ; 
+                    rdfs:range ucm:ActivityFocus ; 
+                    rdfs:label "has activity focus" ; 
+                    rdfs:comment "Situates a process within an activity focus." .
+# An example: patient discharge has the activity focus of safely discharging a patient. 
+
+###  urn:w3c:cg:ucm#negotiates
+ucm:negotiates rdf:type owl:ObjectProperty ;
+                    rdfs:domain ucm:Handshake ;
+                    rdfs:range ucm:Process ;
+                    rdfs:label "negotiates" ;
+                    rdfs:comment "Relates a handshake to the care coordination process whose participation relationship it negotiates." .
+
+###  urn:w3c:cg:ucm#acceptsRequest
+ucm:acceptsRequest rdf:type owl:ObjectProperty ;
+                    rdfs:domain ucm:Entity ;
+                    rdfs:range ucm:ParticipationContext ;
+                    rdfs:label "accepts request" ;
+                    rdfs:comment "A participating entity accepts a care coordination request." .
+
+###  urn:w3c:cg:ucm#hasTemporalContext
+ucm:hasTemporalContext rdf:type owl:ObjectProperty ;
+                    rdfs:range time:TemporalEntity ;
+                    rdfs:label "has temporal context" ;
+                    rdfs:comment "Relates a UCM semantic subject to a temporal entity that qualifies when that subject occurs, obtains, applies, participates, or is otherwise temporally situated." .
+
+###  urn:w3c:cg:ucm#hasCareTrajectoryContext
+ucm:hasCareTrajectoryContext rdf:type owl:ObjectProperty ;
+                    rdfs:label "has care trajectory context" ;
+                    rdfs:comment "Relates a UCM semantic subject to a temporal position or extent defined relative to the internal progression of a process, state trajectory, or coordinated activity rather than directly relative to an external clock or calendar." .
+# This property separates clock time and state-relative time along the trajectory or progression of someone's care. 
+# That grants discernment in scenarios like "the patient referral was accepted after the assessment but before discharge, but 
+# we may not have all of the exact timestamps across each event." 
+
+###  urn:w3c:cg:ucm#validDuring
+ucm:validDuring rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf ucm:hasTemporalContext ;
+                    rdfs:range time:TemporalEntity ;
+                    rdfs:label "valid during" ;
+                    rdfs:comment "Relates a semantic subject or statement to the temporal extent during which its described condition, state, relationship, participation, or other semantics apply." .
+
+###  urn:w3c:cg:ucm#enactiveDuring
+ucm:enactiveDuring rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf ucm:hasTemporalContext ;
+                    rdfs:domain ucm:Participation ;
+                    rdfs:range time:TemporalEntity ;
+                    rdfs:label "enactive during" ;
+                    rdfs:comment "Relates a participation to the temporal extent during which that participation is enactive." .
+
+###  urn:w3c:cg:ucm#occursDuring
+ucm:occursDuring rdf:type owl:ObjectProperty ;
+                    rdfs:subPropertyOf ucm:hasTemporalContext ;
+                    rdfs:domain ucm:Process ;
+                    rdfs:range time:TemporalEntity ;
+                    rdfs:label "occurs during" ;
+                    rdfs:comment "Relates a process to the temporal extent during which the process occurs." .
 
 #################################################################
 #    Data properties
@@ -557,5 +622,40 @@ ucm:SubjectRole rdf:type owl:Class ;
                 rdfs:subClassOf ucm:Role ;
                 rdfs:label "Subject Role" .
 
+###  urn:w3c:cg:ucm#CoordinationRequest
+ucm:CoordinationRequest rdf:type owl:Class ;
+    rdfs:subClassOf ucm:Process ;
+                rdfs:label "Care Coordination Request" ; 
+                rdfs:comment "A process in which coordination is requested between participating entities." .
+
+###  urn:w3c:cg:ucm#CoordinativeActivity
+ucm:CoordinativeActivity rdf:type owl:Class ;
+    rdfs:subClassOf ucm:Process ;
+                rdfs:label "Coordinative Care Activity" ;
+                rdfs:comment "A situated activity whose process is shared by participating entities in its care coordination lifecycle." .
+
+###  urn:w3c:cg:ucm#Handshake
+ucm:Handshake rdf:type owl:Class ; 
+    rdfs:subClassOf ucm:CoordinativeActivity ; 
+                rdfs:label "Handshake" ; 
+                rdfs:comment "A coordinative process through which participating entities negotiate mutual participation in a shared activity." .
+
+###  urn:w3c:cg:ucm#ActivityFocus
+ucm:ActivityFocus rdf:type owl:Class ;
+                rdfs:label "Activity Focus" ;
+                rdfs:comment "The matter, condition, or situation toward which a coordinated activity is orchestrated and which the activity seeks to jointly maintain, update, resolve, or bring about." . 
+# Examples for this may include: housing stability, food security, shelter connection, patient discharge. This is semantically separate from a motive or goal-directed outcome, since it's more specifically defining what is being worked on as a shared process. 
+
+###  urn:w3c:cg:ucm#MatchClaim
+ucm:MatchClaim rdf:type owl:Class ; 
+    rdfs:subClassOf ucm:Statement ; 
+                rdfs:label "Match Claim" ;
+                rdfs:comment "An assertion that two or more entity references co-refer to the same identifiable entity." . 
+# Examples for this may include scenarios where healthcare and human services organizations are establishing an identity resolution claim for a shared patient.
+
+###  urn:w3c:cg:ucm#CareTrajectoryContext
+ucm:CareTrajectoryContext rdf:type owl:Class ;
+                rdfs:label "Care Trajectory Context" ;
+                rdfs:comment "A position or extent defined relative to the progression of a care process, state trajectory, or coordinated activity, which does not require anchoring to clock or calendar time." .
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
