@@ -27,7 +27,8 @@
   owl:versionIRI <https://www.w3.org/ns/ucm/0.0.1> ;
   rdfs:label "Unified Care Model (UCM) Vocabulary"@en ;
   rdfs:comment "UCM is an RDF vocabulary providing a common semantic foundation for achieving semantic interoperability across healthcare and human-service ecosystems."@en ;
-  rdfs:seeAlso <https://www.w3.org/community/ucm/> ;
+  rdfs:seeAlso <https://www.w3.org/community/ucm/> ,
+      <https://github.com/w3c-cg/ucm/blob/latest/unified-care-model.ttl> ;
   vann:preferredNamespacePrefix "ucm" ;
   vann:preferredNamespaceUri "https://www.w3.org/ns/ucm#" ;
   foaf:homepage <https://www.w3.org/community/ucm/> ;

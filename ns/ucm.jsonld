@@ -62,9 +62,14 @@
         "@language": "en",
         "@value": "Unified Care Model (UCM) Vocabulary"
       },
-      "rdfs:seeAlso": {
-        "@id": "https://www.w3.org/community/ucm/"
-      },
+      "rdfs:seeAlso": [
+        {
+          "@id": "https://www.w3.org/community/ucm/"
+        },
+        {
+          "@id": "https://github.com/w3c-cg/ucm/blob/latest/unified-care-model.ttl"
+        }
+      ],
       "vann:preferredNamespacePrefix": "ucm",
       "vann:preferredNamespaceUri": "https://www.w3.org/ns/ucm#"
     }
