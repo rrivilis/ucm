@@ -8,6 +8,8 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix snomedct: <http://purl.bioontology.org/ontology/SNOMEDCT#> .
 @prefix ncbitaxon: <http://purl.obolibrary.org/obo/NCBITaxon#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
 @base <urn:w3c:cg:ucm#> .
 
 <urn:w3c:cg:ucm#> rdf:type owl:Ontology ;
