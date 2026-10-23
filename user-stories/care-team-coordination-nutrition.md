@@ -76,9 +76,10 @@ The story is done when a UCM-conformant graph of the scenario can answer each of
 ## Benefit lifecycle
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": true, "wrappingWidth": 140, "nodeSpacing": 40, "rankSpacing": 60}}}%%
 flowchart LR
-  A1["Food screening<br/>SocialCareInteraction<br/>food runs out each month"] --> A2["Handshakes accepted<br/>Pending to Accepted<br/>pantry gets diet type only"] --> A3["Eligibility determined<br/>EligibilityDetermination<br/>for the Household"]
-  A3 --> B1["Benefit participation 1<br/>BeneficiaryRole, validFrom<br/>tailored meals each Tuesday"] --> B2["Lapse<br/>recert notice to old address<br/>validTo, ordered by trajectory"] --> B3["Benefit participation 2<br/>new validFrom after pay stubs<br/>same Person throughout"]
+  A1["Food<br/>screening<br/>(food runs<br/>out monthly)"] --> A2["Handshakes<br/>accepted<br/>(diet type<br/>only shared)"] --> A3["Eligibility<br/>determined<br/>(for the<br/>Household)"]
+  A3 --> B1["Benefit<br/>participation 1<br/>(validFrom)"] --> B2["Lapse<br/>(recert notice<br/>to old address,<br/>validTo)"] --> B3["Benefit<br/>participation 2<br/>(new validFrom<br/>after pay stubs)"]
 ```
 
 The suspension is shown by closing one participation and opening another, because the TTL only gives lifecycle state to processes (see gaps below).

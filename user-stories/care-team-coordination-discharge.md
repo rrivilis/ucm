@@ -74,12 +74,13 @@ The story is done when a UCM-conformant graph of the scenario can answer each of
 ## Participation view
 
 ```mermaid
+%%{init: {"flowchart": {"htmlLabels": true, "wrappingWidth": 140, "nodeSpacing": 40, "rankSpacing": 60}}}%%
 flowchart LR
-  D["Delphine Arceneaux<br/>one stable Person"]
-  D --> P1["PatientRole<br/>with Riverbend General"] --> R1["ClinicalEncounter<br/>scopedBy ClinicalCareContext"]
-  D --> P2["ClientRole + ResidentRole<br/>with Harborlight Housing"] --> R2["HousingAssessment<br/>scopedBy HousingEligibilityContext"]
-  D --> P3["BeneficiaryRole<br/>with the CareTeam"] --> R3["CareCoordinationInteraction<br/>scopedBy SocialCareContext"]
-  D --> P4["PatientRole<br/>with Northgate Mental Health"] --> R4["Encounter (counseling)<br/>scopedBy BehavioralHealthContext"]
+  D["Delphine<br/>Arceneaux<br/>(one Person)"]
+  D --> P1["PatientRole<br/>(Riverbend)"] --> R1["Clinical<br/>Encounter<br/>(Clinical<br/>Context)"]
+  D --> P2["Client +<br/>Resident<br/>(Harborlight)"] --> R2["Housing<br/>Assessment<br/>(Housing<br/>Context)"]
+  D --> P3["Beneficiary<br/>Role<br/>(CareTeam)"] --> R3["Care Coord.<br/>Interaction<br/>(Social<br/>Context)"]
+  D --> P4["PatientRole<br/>(Northgate)"] --> R4["Counseling<br/>Encounter<br/>(Behavioral<br/>Context)"]
 ```
 
 Delphine never changes. What differs across domains is the `Participation` she enters, the `Role` it assumes, and the `SemanticContext` that scopes it.
