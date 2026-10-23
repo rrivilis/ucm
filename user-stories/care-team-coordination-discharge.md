@@ -1,4 +1,4 @@
-# Care Team Coordination: A UCM User Story
+# Care Team Coordination: A Patient Discharge Home User Story
 
 Oct 22, 2026 · Eric Jahn
 
