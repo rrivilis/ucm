@@ -17,5 +17,5 @@ W3C Group Page
 
 # Visualization: 
 
-https://alexandriaconsulting.com/webvowl/#iri=https://raw.githubusercontent.com/eric-jahn/ucm-hcls-fhir-rdf/refs/heads/gh-pages/docs/ucm/unified-care-model.ttl
+https://alexandriaconsulting.com/webvowl/#iri=[[https://raw.githubusercontent.com/eric-jahn/ucm-hcls-fhir-rdf/refs/heads/gh-pages/docs/ucm/unified-care-model.ttl](https://raw.githubusercontent.com/w3c-cg/ucm/refs/heads/main/unified-care-model.ttl)](https://raw.githubusercontent.com/w3c-cg/ucm/refs/heads/main/unified-care-model.ttl)
 
