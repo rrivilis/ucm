@@ -999,9 +999,6 @@
       "owl:versionIRI": {
         "@id": "ucm:0.0.1"
       },
-      "owl:imports": {
-        "@id": "https://w3.org/ns/ucm#shapes"
-      },
       "owl:versionInfo": "v0.0.1"
     }
   ]

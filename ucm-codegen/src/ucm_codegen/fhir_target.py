@@ -91,7 +91,7 @@ class FhirMapping(BaseModel):
 
     fhir_version: str = Field("4.0.1", alias="fhir-version")
     code_system: str = Field("https://w3.org/ns/ucm#", alias="code-system")
-    node_iri_extension: str = Field("https://w3.org/ns/ucm#fhirNodeIri", alias="node-iri-extension")
+    node_iri_extension: str = Field("https://w3.org/ns/ucm#fhirNode", alias="node-iri-extension")
     resources: Dict[str, FhirResourceMapping]
 
 

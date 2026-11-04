@@ -8,6 +8,7 @@
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
 
 <https://w3.org/ns/ucm#shapes> a owl:Ontology ;
+    owl:imports <https://w3.org/ns/ucm#> ;
     rdfs:label "UCM Core Shapes (draft)" ;
     rdfs:comment """Validation shapes for the Unified Care Model core.
 

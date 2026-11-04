@@ -737,6 +737,9 @@
     {
       "@id": "https://w3.org/ns/ucm#shapes",
       "@type": "owl:Ontology",
+      "owl:imports": {
+        "@id": "https://w3.org/ns/ucm#"
+      },
       "rdfs:comment": "Validation shapes for the Unified Care Model core.\n\nCONVENTION\n  Open by default. No shape uses sh:closed: adopters' own predicates and\n  types (FHIR, HMIS, local data dictionaries, provenance) never produce results.\n\n  Two tiers, tagged with ucmsh:tier and enforced by ucm-shapes-lint.ttl:\n    ucmsh:Definitional  sh:Violation. The data is not a well-formed instance\n                        of the UCM concept: identity-forming edges missing or\n                        duplicated, literals where entities are required,\n                        intervals that end before they begin, cycles with no\n                        base case.\n    ucmsh:Recommended   sh:Warning. Good practice the spec encourages but a\n                        conformant adopter may not yet follow.\n\n  sh:severity is set on every property shape individually. SHACL does not\n  carry a node shape's severity down to its nested property shapes; an\n  untagged property shape reports sh:Violation.\n\n  Type constraints that mirror an rdfs:range (sh:class) are Recommended only.\n  Under RDFS/OWL inference they are vacuous; without inference they reject\n  data typed in a partner ontology. Structural kind (sh:nodeKind) is\n  Definitional, because it is decidable from the data alone.\n\n  Date and time values accept xsd:dateTime or xsd:dateTimeStamp. sh:datatype\n  xsd:dateTime alone rejects xsd:dateTimeStamp, the form OWL-Time recommends.\n  Ordering checks use SPARQL with explicit casts; sh:lessThanOrEquals crashes\n  pySHACL on misordered xsd:dateTimeStamp values.",
       "rdfs:label": "UCM Core Shapes (draft)"
     },
