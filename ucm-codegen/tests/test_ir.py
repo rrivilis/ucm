@@ -8,8 +8,8 @@ from rdflib.namespace import SH
 from ucm_codegen.models import OntologyClass, OntologyIR, PropertyConstraint, Severity, Tier
 from ucm_codegen.normalize import NormalizationError, Normalizer
 
-UCM = "urn:w3c:cg:ucm#"
-UCMSH = "urn:w3c:cg:ucm:shapes#"
+UCM = "https://w3.org/ns/ucm#"
+UCMSH = "https://w3.org/ns/ucm#"
 
 
 def test_ontology_header(compilation):

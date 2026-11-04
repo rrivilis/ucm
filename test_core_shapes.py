@@ -10,7 +10,7 @@
 
 Usage: python3 test_core_shapes.py <dir>
 <dir> must hold unified-care-model.ttl, ucm-lifecycle-vocabularies.ttl
-(in the urn:w3c:cg:ucm# namespace), ucm-core-shapes.ttl,
+(in the https://w3.org/ns/ucm# namespace), ucm-core-shapes.ttl,
 ucm-core-shapes-example.ttl and ucm-shapes-lint.ttl.
 """
 import sys
@@ -20,7 +20,7 @@ from pyshacl import validate
 
 D = sys.argv[1] if len(sys.argv) > 1 else "."
 PFX = """
-@prefix ucm:  <urn:w3c:cg:ucm#> .
+@prefix ucm:  <https://w3.org/ns/ucm#> .
 @prefix ex:   <http://example.org/ucm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -35,7 +35,7 @@ PFX = """
 def shapes_graph(mutate=None):
     s = Graph(); s.parse(f"{D}/ucm-core-shapes.ttl", format="turtle")
     if mutate:
-        s.parse(data=PFX + "@prefix sh: <http://www.w3.org/ns/shacl#> . @prefix ucmsh: <urn:w3c:cg:ucm:shapes#> .\n" + mutate, format="turtle")
+        s.parse(data=PFX + "@prefix sh: <http://www.w3.org/ns/shacl#> . @prefix ucmsh: <https://w3.org/ns/ucm#> .\n" + mutate, format="turtle")
     return s
 
 def data_graph(extra=""):
@@ -216,7 +216,7 @@ preds = sorted({str(rep.value(r, SH.resultPath)) for r in rep.subjects(RDF.type,
                 if rep.value(r, SH.sourceConstraintComponent) == SH.ClosedConstraintComponent})
 print(f"   new Violations: {len(closed)} focus nodes")
 for p in preds:
-    tag = "UCM's OWN" if p.startswith("urn:w3c:cg:ucm#") else "adopter "
+    tag = "UCM's OWN" if p.startswith("https://w3.org/ns/ucm#") else "adopter "
     print(f"     {tag}  {p}")
 
 # ------------------------------------------------------------------ 6
@@ -233,7 +233,7 @@ MUTATION = (CLOSE + "\n"
             "ucmsh:NewShape a sh:NodeShape ; sh:targetClass ucm:Person ; "
             "sh:property [ sh:path ucm:affiliatedWith ; sh:minCount 1 ] .\n")
 mutated = shapes_graph(MUTATION)
-mutated.remove((URIRef("urn:w3c:cg:ucm:shapes#Participation-entityType"), SH.severity, None))
+mutated.remove((URIRef("https://w3.org/ns/ucm#Participation-entityType"), SH.severity, None))
 print("   mutated (closed w/o rationale; untiered new shape; Recommended shape missing severity):")
 for r in lint_results(mutated):
     print("     ", r)

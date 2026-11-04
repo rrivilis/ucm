@@ -141,7 +141,7 @@ def test_lock_records_what_is_on_disk(tmp_path):
     assert [s["path"].endswith(".ttl") for s in lock.sources["ontology"]] == [True, True]
     assert {e["file"] for e in lock.ir} == {"ucm-ontology.jsonld", "ucm-shapes.jsonld", "ucm-shapes-lint.jsonld"}
     snapshot = json.loads((tmp_path / "ir" / "ucm-ir.json").read_text(encoding="utf-8"))
-    assert snapshot["iri"] == "urn:w3c:cg:ucm#"
+    assert snapshot["iri"] == "https://w3.org/ns/ucm#"
 
 
 def test_spec_change_is_diffed_and_stale_outputs_pruned(tmp_path, regressed_sources):

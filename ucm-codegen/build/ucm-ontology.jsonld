@@ -1,7 +1,7 @@
 {
   "@context": {
-    "ucm": "urn:w3c:cg:ucm#",
-    "ucmsh": "urn:w3c:cg:ucm:shapes#",
+    "ucm": "https://w3.org/ns/ucm#",
+    "ucmsh": "https://w3.org/ns/ucm#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -992,12 +992,15 @@
       }
     },
     {
-      "@id": "urn:w3c:cg:ucm#",
+      "@id": "https://w3.org/ns/ucm#",
       "@type": "owl:Ontology",
       "rdfs:comment": "Complete UCM model including Core, Participation, and Domain semantic layers.",
       "rdfs:label": "Unified Care Model",
       "owl:versionIRI": {
         "@id": "ucm:0.0.1"
+      },
+      "owl:imports": {
+        "@id": "https://w3.org/ns/ucm#shapes"
       },
       "owl:versionInfo": "v0.0.1"
     }

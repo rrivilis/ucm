@@ -35,7 +35,7 @@ FHIR_MAPPING = PROJECT / "profiles" / "ucm-fhir-mapping.yaml"
 #   - the lifecycle vocabulary declared its concepts under another namespace
 #   - ucm:acceptsRequest ranged over an undeclared ucm:ParticipationContext
 DRIFTED_NAMESPACE = "http://mdixinc.com/ucm#"
-UCM_NAMESPACE = "urn:w3c:cg:ucm#"
+UCM_NAMESPACE = "https://w3.org/ns/ucm#"
 
 
 def export_ir(tmp: Path, ontology: List[Path]) -> Tuple[Path, Path, Path]:

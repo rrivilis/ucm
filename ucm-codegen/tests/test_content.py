@@ -7,7 +7,7 @@ from ucm_codegen.content import (
 )
 from ucm_codegen.pipeline import compile_ir
 
-UCM = "urn:w3c:cg:ucm#"
+UCM = "https://w3.org/ns/ucm#"
 
 
 def test_digests_ignore_line_endings_and_key_order():

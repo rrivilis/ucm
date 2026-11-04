@@ -1,5 +1,5 @@
-@prefix ucm:    <urn:w3c:cg:ucm#> .
-@prefix ucmsh:  <urn:w3c:cg:ucm:shapes#> .
+@prefix ucm:    <https://w3.org/ns/ucm#> .
+@prefix ucmsh:  <https://w3.org/ns/ucm#> .
 @prefix sh:     <http://www.w3.org/ns/shacl#> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
@@ -7,7 +7,7 @@
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
 
-<urn:w3c:cg:ucm:shapes> a owl:Ontology ;
+<https://w3.org/ns/ucm#shapes> a owl:Ontology ;
     rdfs:label "UCM Core Shapes (draft)" ;
     rdfs:comment """Validation shapes for the Unified Care Model core.
 
@@ -110,7 +110,7 @@ ucmsh:ParticipationValidityShape a sh:NodeShape ;
     sh:sparql [
         sh:message "Participation validTo precedes validFrom." ;
         sh:select """
-            PREFIX ucm: <urn:w3c:cg:ucm#>
+            PREFIX ucm: <https://w3.org/ns/ucm#>
             PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
             SELECT $this WHERE {
                 $this ucm:validFrom ?f ; ucm:validTo ?t .
@@ -126,7 +126,7 @@ ucmsh:ParticipationProcessConsistencyShape a sh:NodeShape ;
     sh:sparql [
         sh:message "A process lists this participation via hasParticipant, but the participation occurs within a different process." ;
         sh:select """
-            PREFIX ucm: <urn:w3c:cg:ucm#>
+            PREFIX ucm: <https://w3.org/ns/ucm#>
             SELECT $this WHERE {
                 ?claimant ucm:hasParticipant $this .
                 $this ucm:occursWithin ?actual .
@@ -140,7 +140,7 @@ ucmsh:ParticipationEntityConsistencyShape a sh:NodeShape ;
     sh:sparql [
         sh:message "An entity participates through this participation via participatesThrough, but the participation names a different participating entity." ;
         sh:select """
-            PREFIX ucm: <urn:w3c:cg:ucm#>
+            PREFIX ucm: <https://w3.org/ns/ucm#>
             SELECT $this WHERE {
                 ?claimant ucm:participatesThrough $this .
                 $this ucm:participatingEntity ?actual .
@@ -154,7 +154,7 @@ ucmsh:DualTemporalEncodingShape a sh:NodeShape ;
     sh:sparql [
         sh:message "Participation uses both validFrom/validTo and enactiveDuring. The two encodings can diverge; prefer enactiveDuring." ;
         sh:select """
-            PREFIX ucm: <urn:w3c:cg:ucm#>
+            PREFIX ucm: <https://w3.org/ns/ucm#>
             SELECT $this WHERE {
                 $this ucm:enactiveDuring ?iv .
                 FILTER EXISTS { $this ucm:validFrom|ucm:validTo ?x }
@@ -209,7 +209,7 @@ ucmsh:HandshakeAcyclicShape a sh:NodeShape ;
     sh:sparql [
         sh:message "Handshake negotiates itself, directly or through a chain: the negotiation has no base case." ;
         sh:select """
-            PREFIX ucm: <urn:w3c:cg:ucm#>
+            PREFIX ucm: <https://w3.org/ns/ucm#>
             SELECT $this WHERE { $this ucm:negotiates+ $this }""" ;
     ] .
 
@@ -238,7 +238,7 @@ ucmsh:LifecycleState-anchored a sh:NodeShape ;
     sh:sparql [
         sh:message "Lifecycle state is neither in ucm:LifecycleState nor SKOS-mapped to a concept that is." ;
         sh:select """
-            PREFIX ucm:  <urn:w3c:cg:ucm#>
+            PREFIX ucm:  <https://w3.org/ns/ucm#>
             PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
             SELECT $this ?value WHERE {
                 $this ucm:hasLifecycleState ?value .
@@ -260,7 +260,7 @@ ucmsh:CoordinativeActivityShape a sh:NodeShape ;
     sh:sparql [
         sh:message "Coordination process declares no activity focus, directly or through a process it negotiates." ;
         sh:select """
-            PREFIX ucm: <urn:w3c:cg:ucm#>
+            PREFIX ucm: <https://w3.org/ns/ucm#>
             SELECT $this WHERE {
                 FILTER NOT EXISTS { $this ucm:negotiates*/ucm:hasActivityFocus ?f }
             }""" ;
@@ -316,7 +316,7 @@ ucmsh:ProjectionBackingShape a sh:NodeShape ;
     sh:sparql [
         sh:message "Convenience projection (hasClient/hasPatient/hasResident) has no backing participation with the matching role." ;
         sh:select """
-            PREFIX ucm:  <urn:w3c:cg:ucm#>
+            PREFIX ucm:  <https://w3.org/ns/ucm#>
             PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
             SELECT $this WHERE {
                 # UNION, not VALUES: SHACL forbids VALUES in SPARQL constraints.

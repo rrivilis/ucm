@@ -18,8 +18,8 @@
 # direction can rebuild them (single-hop paths only; chains are one-way).
 
 fhir-version: 4.0.1
-code-system: urn:w3c:cg:ucm
-node-iri-extension: urn:w3c:cg:ucm:fhir#node-iri
+code-system: https://w3.org/ns/ucm#
+node-iri-extension: https://w3.org/ns/ucm#fhirNode
 
 resources:
   Person:

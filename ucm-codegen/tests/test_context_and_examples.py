@@ -11,7 +11,7 @@ from referencing.jsonschema import DRAFT202012
 from ucm_codegen.examples import build_examples
 from ucm_codegen.generator import Generator
 
-UCM = "urn:w3c:cg:ucm#"
+UCM = "https://w3.org/ns/ucm#"
 BASE = "https://ucm.example/openapi.json"
 
 

@@ -1,7 +1,7 @@
 {
   "@context": {
-    "ucm": "urn:w3c:cg:ucm#",
-    "ucmsh": "urn:w3c:cg:ucm:shapes#",
+    "ucm": "https://w3.org/ns/ucm#",
+    "ucmsh": "https://w3.org/ns/ucm#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
@@ -735,7 +735,7 @@
       }
     },
     {
-      "@id": "urn:w3c:cg:ucm:shapes",
+      "@id": "https://w3.org/ns/ucm#shapes",
       "@type": "owl:Ontology",
       "rdfs:comment": "Validation shapes for the Unified Care Model core.\n\nCONVENTION\n  Open by default. No shape uses sh:closed: adopters' own predicates and\n  types (FHIR, HMIS, local data dictionaries, provenance) never produce results.\n\n  Two tiers, tagged with ucmsh:tier and enforced by ucm-shapes-lint.ttl:\n    ucmsh:Definitional  sh:Violation. The data is not a well-formed instance\n                        of the UCM concept: identity-forming edges missing or\n                        duplicated, literals where entities are required,\n                        intervals that end before they begin, cycles with no\n                        base case.\n    ucmsh:Recommended   sh:Warning. Good practice the spec encourages but a\n                        conformant adopter may not yet follow.\n\n  sh:severity is set on every property shape individually. SHACL does not\n  carry a node shape's severity down to its nested property shapes; an\n  untagged property shape reports sh:Violation.\n\n  Type constraints that mirror an rdfs:range (sh:class) are Recommended only.\n  Under RDFS/OWL inference they are vacuous; without inference they reject\n  data typed in a partner ontology. Structural kind (sh:nodeKind) is\n  Definitional, because it is decidable from the data alone.\n\n  Date and time values accept xsd:dateTime or xsd:dateTimeStamp. sh:datatype\n  xsd:dateTime alone rejects xsd:dateTimeStamp, the form OWL-Time recommends.\n  Ordering checks use SPARQL with explicit casts; sh:lessThanOrEquals crashes\n  pySHACL on misordered xsd:dateTimeStamp values.",
       "rdfs:label": "UCM Core Shapes (draft)"
@@ -759,12 +759,12 @@
     {
       "@id": "_:c14n1",
       "sh:message": "An entity participates through this participation via participatesThrough, but the participation names a different participating entity.",
-      "sh:select": "\n            PREFIX ucm: <urn:w3c:cg:ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:participatesThrough $this .\n                $this ucm:participatingEntity ?actual .\n                FILTER (?claimant != ?actual)\n            }"
+      "sh:select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:participatesThrough $this .\n                $this ucm:participatingEntity ?actual .\n                FILTER (?claimant != ?actual)\n            }"
     },
     {
       "@id": "_:c14n10",
       "sh:message": "Handshake negotiates itself, directly or through a chain: the negotiation has no base case.",
-      "sh:select": "\n            PREFIX ucm: <urn:w3c:cg:ucm#>\n            SELECT $this WHERE { $this ucm:negotiates+ $this }"
+      "sh:select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE { $this ucm:negotiates+ $this }"
     },
     {
       "@id": "_:c14n11",
@@ -835,17 +835,17 @@
     {
       "@id": "_:c14n18",
       "sh:message": "Coordination process declares no activity focus, directly or through a process it negotiates.",
-      "sh:select": "\n            PREFIX ucm: <urn:w3c:cg:ucm#>\n            SELECT $this WHERE {\n                FILTER NOT EXISTS { $this ucm:negotiates*/ucm:hasActivityFocus ?f }\n            }"
+      "sh:select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                FILTER NOT EXISTS { $this ucm:negotiates*/ucm:hasActivityFocus ?f }\n            }"
     },
     {
       "@id": "_:c14n2",
       "sh:message": "A process lists this participation via hasParticipant, but the participation occurs within a different process.",
-      "sh:select": "\n            PREFIX ucm: <urn:w3c:cg:ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:hasParticipant $this .\n                $this ucm:occursWithin ?actual .\n                FILTER (?claimant != ?actual)\n            }"
+      "sh:select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:hasParticipant $this .\n                $this ucm:occursWithin ?actual .\n                FILTER (?claimant != ?actual)\n            }"
     },
     {
       "@id": "_:c14n20",
       "sh:message": "Participation validTo precedes validFrom.",
-      "sh:select": "\n            PREFIX ucm: <urn:w3c:cg:ucm#>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n            SELECT $this WHERE {\n                $this ucm:validFrom ?f ; ucm:validTo ?t .\n                FILTER (xsd:dateTime(STR(?t)) < xsd:dateTime(STR(?f)))\n            }"
+      "sh:select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n            SELECT $this WHERE {\n                $this ucm:validFrom ?f ; ucm:validTo ?t .\n                FILTER (xsd:dateTime(STR(?t)) < xsd:dateTime(STR(?f)))\n            }"
     },
     {
       "@id": "_:c14n21",
@@ -886,12 +886,12 @@
     {
       "@id": "_:c14n3",
       "sh:message": "Lifecycle state is neither in ucm:LifecycleState nor SKOS-mapped to a concept that is.",
-      "sh:select": "\n            PREFIX ucm:  <urn:w3c:cg:ucm#>\n            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n            SELECT $this ?value WHERE {\n                $this ucm:hasLifecycleState ?value .\n                FILTER NOT EXISTS { ?value skos:inScheme ucm:LifecycleState }\n                FILTER NOT EXISTS {\n                    ?value (skos:exactMatch|skos:closeMatch|skos:broadMatch|skos:narrowMatch)/skos:inScheme\n                           ucm:LifecycleState\n                }\n            }"
+      "sh:select": "\n            PREFIX ucm:  <https://w3.org/ns/ucm#>\n            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n            SELECT $this ?value WHERE {\n                $this ucm:hasLifecycleState ?value .\n                FILTER NOT EXISTS { ?value skos:inScheme ucm:LifecycleState }\n                FILTER NOT EXISTS {\n                    ?value (skos:exactMatch|skos:closeMatch|skos:broadMatch|skos:narrowMatch)/skos:inScheme\n                           ucm:LifecycleState\n                }\n            }"
     },
     {
       "@id": "_:c14n5",
       "sh:message": "Convenience projection (hasClient/hasPatient/hasResident) has no backing participation with the matching role.",
-      "sh:select": "\n            PREFIX ucm:  <urn:w3c:cg:ucm#>\n            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n            SELECT $this WHERE {\n                # UNION, not VALUES: SHACL forbids VALUES in SPARQL constraints.\n                { $this ucm:hasClient   ?person . BIND (ucm:ClientRole   AS ?roleClass) }\n                UNION\n                { $this ucm:hasPatient  ?person . BIND (ucm:PatientRole  AS ?roleClass) }\n                UNION\n                { $this ucm:hasResident ?person . BIND (ucm:ResidentRole AS ?roleClass) }\n                FILTER NOT EXISTS {\n                    ?p ucm:participatingEntity ?person ;\n                       ucm:assumesRole/a/rdfs:subClassOf* ?roleClass .\n                    { ?p ucm:occursWithin $this } UNION { $this ucm:hasParticipant ?p }\n                }\n            }"
+      "sh:select": "\n            PREFIX ucm:  <https://w3.org/ns/ucm#>\n            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n            SELECT $this WHERE {\n                # UNION, not VALUES: SHACL forbids VALUES in SPARQL constraints.\n                { $this ucm:hasClient   ?person . BIND (ucm:ClientRole   AS ?roleClass) }\n                UNION\n                { $this ucm:hasPatient  ?person . BIND (ucm:PatientRole  AS ?roleClass) }\n                UNION\n                { $this ucm:hasResident ?person . BIND (ucm:ResidentRole AS ?roleClass) }\n                FILTER NOT EXISTS {\n                    ?p ucm:participatingEntity ?person ;\n                       ucm:assumesRole/a/rdfs:subClassOf* ?roleClass .\n                    { ?p ucm:occursWithin $this } UNION { $this ucm:hasParticipant ?p }\n                }\n            }"
     },
     {
       "@id": "_:c14n6",
@@ -912,7 +912,7 @@
     {
       "@id": "_:c14n8",
       "sh:message": "Participation uses both validFrom/validTo and enactiveDuring. The two encodings can diverge; prefer enactiveDuring.",
-      "sh:select": "\n            PREFIX ucm: <urn:w3c:cg:ucm#>\n            SELECT $this WHERE {\n                $this ucm:enactiveDuring ?iv .\n                FILTER EXISTS { $this ucm:validFrom|ucm:validTo ?x }\n            }"
+      "sh:select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                $this ucm:enactiveDuring ?iv .\n                FILTER EXISTS { $this ucm:validFrom|ucm:validTo ?x }\n            }"
     },
     {
       "@id": "_:c14n9",
