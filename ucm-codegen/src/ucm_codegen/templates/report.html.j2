@@ -593,7 +593,7 @@ h3 { font-size: 12px; }
               {% if constraints %}
               <ul class="constraints">
                 {% for k in constraints | unique(attribute="message") %}
-                <li><span class="pill {{ k.severity }}">{{ k.tier or k.severity }}</span><span>{{ k.message }}</span></li>
+                <li><span class="pill {{ k.severity }}">{{ k.get("tier") or k.severity }}</span><span>{{ k.message }}</span></li>
                 {% endfor %}
               </ul>
               {% endif %}

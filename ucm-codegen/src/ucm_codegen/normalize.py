@@ -44,7 +44,12 @@ class NormalizationError(ValueError):
 
 
 def _namespace_of(iri: str) -> str:
-    return iri if iri.endswith(("#", "/")) else iri + "#"
+    """Namespace of an ontology header IRI: <ns#> and <ns/> as given, <ns#name> → ns#, <urn:x> → urn:x#"""
+    if iri.endswith(("#", "/")):
+        return iri
+    if "#" in iri:
+        return iri[: iri.index("#") + 1]
+    return iri + "#"
 
 
 class Normalizer:
