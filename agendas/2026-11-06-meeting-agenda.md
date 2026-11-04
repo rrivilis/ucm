@@ -3,7 +3,7 @@
   * let @eric-jahn know if you need an invite
   * we can assign issues and pull request
 * proposal for workbench/implementations page (rr)
-* namespace fixes
+* namespace fixes - checker/linter/codegen broken
 * UCM logo
 
 # Issue Discussion
