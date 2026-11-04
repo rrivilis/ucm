@@ -28,8 +28,8 @@ JSONLD_SUFFIXES = {".jsonld", ".json"}
 
 # Prefixes used to keep exported JSON-LD readable; they do not affect the IR
 EXPORT_PREFIXES: Dict[str, str] = {
-    "ucm": "urn:w3c:cg:ucm#",
-    "ucmsh": "urn:w3c:cg:ucm:shapes#",
+    "ucm": "https://www.w3.org/ns/ucm#",
+    "ucmsh": "https://www.w3.org/ns/ucm#",
     "owl": "http://www.w3.org/2002/07/owl#",
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",

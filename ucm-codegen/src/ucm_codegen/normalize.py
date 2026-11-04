@@ -24,7 +24,7 @@ from .models import (
 )
 from .utils import local_name
 
-DEFAULT_SHAPES_NS = "urn:w3c:cg:ucm:shapes#"
+DEFAULT_SHAPES_NS = "https://www.w3.org/ns/ucm#"
 
 # Prefixes carried into the IR (and from there into the JSON-LD context)
 STANDARD_PREFIXES = {
@@ -44,7 +44,12 @@ class NormalizationError(ValueError):
 
 
 def _namespace_of(iri: str) -> str:
-    return iri if iri.endswith(("#", "/")) else iri + "#"
+    """Namespace of an ontology header IRI: <ns#> and <ns/> as given, <ns#name> → ns#, <urn:x> → urn:x#"""
+    if iri.endswith(("#", "/")):
+        return iri
+    if "#" in iri:
+        return iri[: iri.index("#") + 1]
+    return iri + "#"
 
 
 class Normalizer:

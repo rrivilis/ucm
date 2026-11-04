@@ -23,7 +23,7 @@ def test_info_traces_the_ontology(openapi_doc):
     assert info["version"] == "0.0.1"
     assert info["x-jsonld-context"] == "./context.jsonld"
     ontology = info["x-ucm-ontology"]
-    assert ontology["iri"] == "urn:w3c:cg:ucm#"
+    assert ontology["iri"] == "https://www.w3.org/ns/ucm#"
     assert {s["file"] for s in ontology["sources"]} == {"ucm-ontology.jsonld", "ucm-shapes.jsonld"}
     assert all(s["digest"].startswith("sha256:") for s in ontology["sources"])
 

@@ -10,7 +10,7 @@ from ucm_codegen.pipeline import compile_ir
 
 from .conftest import SHAPES_LINT_TTL
 
-UCMSH = "urn:w3c:cg:ucm:shapes#"
+UCMSH = "https://www.w3.org/ns/ucm#"
 
 
 def by_code(compilation, code):
@@ -32,7 +32,7 @@ def test_lifecycle_namespace_drift(regressed_compilation):
     (drift,) = by_code(regressed_compilation, "namespace-drift")
     assert drift.subject == "ucm:LifecycleState"
     assert "http://mdixinc.com/ucm#LifecycleState" in drift.message
-    assert "ucmsh:LifecycleState-anchored" in drift.message
+    assert "ucm:LifecycleState-anchored" in drift.message
 
 
 def test_accepts_request_range(regressed_compilation):
@@ -63,7 +63,7 @@ def test_spec_lint_catches_untiered_shape(compilation, tmp_path):
 
     findings = compile_ir([ontology_file], [shapes_file], [lint_file]).findings
     (finding,) = [f for f in findings if f.code == "shapes-lint"]
-    assert finding.subject == "ucmsh:Participation-role"
+    assert finding.subject == "ucm:Participation-role"
     assert finding.message == "Constraint-bearing shape has no ucmsh:tier."
     assert finding.severity == Severity.VIOLATION
 
@@ -78,7 +78,7 @@ def test_informational_findings(compilation):
 
 # ---------- Namespace split across files (as on main, 2026-10-28) ----------
 
-MOVED_NAMESPACE = "https://w3.org/ns/ucm#"
+MOVED_NAMESPACE = "https://example.org/moved/ucm#"  # anywhere but the real namespace
 
 
 @pytest.fixture(scope="module")
@@ -98,7 +98,7 @@ def split_compilation(tmp_path_factory):
 
 def test_namespace_split_is_one_clear_finding(split_compilation):
     (drift,) = by_code(split_compilation, "namespace-drift")
-    assert drift.subject == "urn:w3c:cg:ucm#"
+    assert drift.subject == "https://www.w3.org/ns/ucm#"
     assert f"declared only under <{MOVED_NAMESPACE}>" in drift.message
     assert drift.message.startswith("47 terms (ActivityFocus, ")  # every UCM term the shapes use
     assert "Align the @prefix" in drift.message

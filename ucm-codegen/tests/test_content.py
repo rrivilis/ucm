@@ -7,7 +7,7 @@ from ucm_codegen.content import (
 )
 from ucm_codegen.pipeline import compile_ir
 
-UCM = "urn:w3c:cg:ucm#"
+UCM = "https://www.w3.org/ns/ucm#"
 
 
 def test_digests_ignore_line_endings_and_key_order():
@@ -27,7 +27,7 @@ def test_every_ir_node_is_addressed(compilation):
     ir = compilation.ir
     assert len(nodes) == 1 + len(ir.classes) + len(ir.properties) + len(ir.schemes) + len(ir.shapes)
     assert {"ontology", "class:ucm:Participation", "property:ucm:validFrom",
-            "scheme:ucm:LifecycleState", "shape:ucmsh:ParticipationShape"} <= set(nodes)
+            "scheme:ucm:LifecycleState", "shape:ucm:ParticipationShape"} <= set(nodes)
 
 
 def test_node_digests_are_reproducible(ir_files, compilation):
