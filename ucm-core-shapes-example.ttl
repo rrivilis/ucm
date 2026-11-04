@@ -1,4 +1,4 @@
-@prefix ucm:  <https://w3.org/ns/ucm#> .
+@prefix ucm:  <https://www.w3.org/ns/ucm#> .
 @prefix ex:   <http://example.org/ucm/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .

@@ -24,7 +24,7 @@ from .models import (
 )
 from .utils import local_name
 
-DEFAULT_SHAPES_NS = "https://w3.org/ns/ucm#"
+DEFAULT_SHAPES_NS = "https://www.w3.org/ns/ucm#"
 
 # Prefixes carried into the IR (and from there into the JSON-LD context)
 STANDARD_PREFIXES = {

@@ -90,8 +90,8 @@ class FhirMapping(BaseModel):
     model_config = ConfigDict(extra="forbid", populate_by_name=True)
 
     fhir_version: str = Field("4.0.1", alias="fhir-version")
-    code_system: str = Field("https://w3.org/ns/ucm#", alias="code-system")
-    node_iri_extension: str = Field("https://w3.org/ns/ucm#fhirNode", alias="node-iri-extension")
+    code_system: str = Field("https://www.w3.org/ns/ucm#", alias="code-system")
+    node_iri_extension: str = Field("https://www.w3.org/ns/ucm#fhirNode", alias="node-iri-extension")
     resources: Dict[str, FhirResourceMapping]
 
 

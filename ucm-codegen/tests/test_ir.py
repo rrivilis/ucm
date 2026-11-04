@@ -8,8 +8,8 @@ from rdflib.namespace import SH
 from ucm_codegen.models import OntologyClass, OntologyIR, PropertyConstraint, Severity, Tier
 from ucm_codegen.normalize import NormalizationError, Normalizer, _namespace_of
 
-UCM = "https://w3.org/ns/ucm#"
-UCMSH = "https://w3.org/ns/ucm#"
+UCM = "https://www.w3.org/ns/ucm#"
+UCMSH = "https://www.w3.org/ns/ucm#"
 
 
 def test_ontology_header(compilation):
@@ -126,9 +126,9 @@ def test_terms_must_be_unique():
 
 @pytest.mark.parametrize("header, namespace", [
     ("urn:w3c:cg:ucm:shapes", "urn:w3c:cg:ucm:shapes#"),
-    ("https://w3.org/ns/ucm#", "https://w3.org/ns/ucm#"),
-    ("https://w3.org/ns/ucm/shapes/", "https://w3.org/ns/ucm/shapes/"),
-    ("https://w3.org/ns/ucm#shapes", "https://w3.org/ns/ucm#"),  # a fragment names a term, not a namespace
+    ("https://www.w3.org/ns/ucm#", "https://www.w3.org/ns/ucm#"),
+    ("https://www.w3.org/ns/ucm/shapes/", "https://www.w3.org/ns/ucm/shapes/"),
+    ("https://www.w3.org/ns/ucm#shapes", "https://www.w3.org/ns/ucm#"),  # a fragment names a term, not a namespace
 ])
 def test_namespace_of_ontology_header(header, namespace):
     assert _namespace_of(header) == namespace

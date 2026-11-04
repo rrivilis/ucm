@@ -7,9 +7,9 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix vann:    <http://purl.org/vocab/vann/> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
-@prefix ucm:     <https://w3.org/ns/ucm#> .
+@prefix ucm:     <https://www.w3.org/ns/ucm#> .
 
-<https://w3.org/ns/ucm>
+<https://www.w3.org/ns/ucm>
   a owl:Ontology ;
   dcterms:title "Unified Care Model (UCM) Vocabulary"@en ;
   dcterms:description "UCM is an RDF vocabulary providing a common semantic foundation for achieving semantic interoperability across healthcare and human-service ecosystems. It serves as a semantic bridge that enables standards, ontologies, information models, and data models developed by independent communities to communicate with a shared understanding of information while preserving their respective semantics."@en ;
@@ -24,12 +24,12 @@
   dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
   dcterms:isPartOf <https://w3.org/community/ucm/> ;
   owl:versionInfo "0.0.1" ;
-  owl:versionIRI <https://w3.org/ns/ucm/0.0.1> ;
+  owl:versionIRI <https://www.w3.org/ns/ucm/0.0.1> ;
   rdfs:label "Unified Care Model (UCM) Vocabulary"@en ;
   rdfs:comment "UCM is an RDF vocabulary providing a common semantic foundation for achieving semantic interoperability across healthcare and human-service ecosystems."@en ;
   rdfs:seeAlso <https://w3.org/community/ucm/> ,
       <https://github.com/w3c-cg/ucm/blob/latest/unified-care-model.ttl> ;
   vann:preferredNamespacePrefix "ucm" ;
-  vann:preferredNamespaceUri "https://w3.org/ns/ucm#" ;
+  vann:preferredNamespaceUri "https://www.w3.org/ns/ucm#" ;
   foaf:homepage <https://w3.org/community/ucm/> ;
 .

@@ -1,6 +1,6 @@
 {
-  "iri": "https://w3.org/ns/ucm#",
-  "namespace": "https://w3.org/ns/ucm#",
+  "iri": "https://www.w3.org/ns/ucm#",
+  "namespace": "https://www.w3.org/ns/ucm#",
   "prefix": "ucm",
   "label": "Unified Care Model",
   "comment": "Complete UCM model including Core, Participation, and Domain semantic layers.",
@@ -20,437 +20,437 @@
     }
   ],
   "classes": {
-    "https://w3.org/ns/ucm#ActivityFocus": {
-      "iri": "https://w3.org/ns/ucm#ActivityFocus",
+    "https://www.w3.org/ns/ucm#ActivityFocus": {
+      "iri": "https://www.w3.org/ns/ucm#ActivityFocus",
       "term": "ActivityFocus",
       "label": "Activity Focus",
       "comment": "The matter, condition, or situation toward which a coordinated activity is orchestrated and which the activity seeks to jointly maintain, update, resolve, or bring about.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#BehavioralHealthContext": {
-      "iri": "https://w3.org/ns/ucm#BehavioralHealthContext",
+    "https://www.w3.org/ns/ucm#BehavioralHealthContext": {
+      "iri": "https://www.w3.org/ns/ucm#BehavioralHealthContext",
       "term": "BehavioralHealthContext",
       "label": "Behavioral Health Context",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SemanticContext"
+        "https://www.w3.org/ns/ucm#SemanticContext"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#BehavioralHealthDomain": {
-      "iri": "https://w3.org/ns/ucm#BehavioralHealthDomain",
+    "https://www.w3.org/ns/ucm#BehavioralHealthDomain": {
+      "iri": "https://www.w3.org/ns/ucm#BehavioralHealthDomain",
       "term": "BehavioralHealthDomain",
       "label": "Behavioral Health Domain",
       "comment": null,
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#BeneficiaryRole": {
-      "iri": "https://w3.org/ns/ucm#BeneficiaryRole",
+    "https://www.w3.org/ns/ucm#BeneficiaryRole": {
+      "iri": "https://www.w3.org/ns/ucm#BeneficiaryRole",
       "term": "BeneficiaryRole",
       "label": "Beneficiary Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SubjectRole"
+        "https://www.w3.org/ns/ucm#SubjectRole"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareCommitment": {
-      "iri": "https://w3.org/ns/ucm#CareCommitment",
+    "https://www.w3.org/ns/ucm#CareCommitment": {
+      "iri": "https://www.w3.org/ns/ucm#CareCommitment",
       "term": "CareCommitment",
       "label": "Care Commitment",
       "comment": "A continuing agreement among participants to coordinate care toward a joint purpose, according to terms or conditions that may evolve.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareCoordinationInteraction": {
-      "iri": "https://w3.org/ns/ucm#CareCoordinationInteraction",
+    "https://www.w3.org/ns/ucm#CareCoordinationInteraction": {
+      "iri": "https://www.w3.org/ns/ucm#CareCoordinationInteraction",
       "term": "CareCoordinationInteraction",
       "label": "Care Coordination Interaction",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareCoordinationStatement": {
-      "iri": "https://w3.org/ns/ucm#CareCoordinationStatement",
+    "https://www.w3.org/ns/ucm#CareCoordinationStatement": {
+      "iri": "https://www.w3.org/ns/ucm#CareCoordinationStatement",
       "term": "CareCoordinationStatement",
       "label": "Care Coordination Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Statement"
+        "https://www.w3.org/ns/ucm#Statement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareCoverageGap": {
-      "iri": "https://w3.org/ns/ucm#CareCoverageGap",
+    "https://www.w3.org/ns/ucm#CareCoverageGap": {
+      "iri": "https://www.w3.org/ns/ucm#CareCoverageGap",
       "term": "CareCoverageGap",
       "label": "Care Coverage Gap",
       "comment": "A condition in which a care coverage requirement is in force but is not satisfied by any applicable in-force care commitment during a specified interval.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareCoverageRequirement": {
-      "iri": "https://w3.org/ns/ucm#CareCoverageRequirement",
+    "https://www.w3.org/ns/ucm#CareCoverageRequirement": {
+      "iri": "https://www.w3.org/ns/ucm#CareCoverageRequirement",
       "term": "CareCoverageRequirement",
       "label": "Care Coverage Requirement",
       "comment": "A requirement that some participation in care coordination concerns an activity focus, in a given role, over a defined context or interval.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareTeam": {
-      "iri": "https://w3.org/ns/ucm#CareTeam",
+    "https://www.w3.org/ns/ucm#CareTeam": {
+      "iri": "https://www.w3.org/ns/ucm#CareTeam",
       "term": "CareTeam",
       "label": "Care Team",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SocialGroupEntity"
+        "https://www.w3.org/ns/ucm#SocialGroupEntity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CareTrajectoryContext": {
-      "iri": "https://w3.org/ns/ucm#CareTrajectoryContext",
+    "https://www.w3.org/ns/ucm#CareTrajectoryContext": {
+      "iri": "https://www.w3.org/ns/ucm#CareTrajectoryContext",
       "term": "CareTrajectoryContext",
       "label": "Care Trajectory Context",
       "comment": "A position or extent defined relative to the progression of a care process, state trajectory, or coordinated activity, which does not require anchoring to clock or calendar time.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CaregiverRole": {
-      "iri": "https://w3.org/ns/ucm#CaregiverRole",
+    "https://www.w3.org/ns/ucm#CaregiverRole": {
+      "iri": "https://www.w3.org/ns/ucm#CaregiverRole",
       "term": "CaregiverRole",
       "label": "Caregiver Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Role"
+        "https://www.w3.org/ns/ucm#Role"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ClientRole": {
-      "iri": "https://w3.org/ns/ucm#ClientRole",
+    "https://www.w3.org/ns/ucm#ClientRole": {
+      "iri": "https://www.w3.org/ns/ucm#ClientRole",
       "term": "ClientRole",
       "label": "Client Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SubjectRole"
+        "https://www.w3.org/ns/ucm#SubjectRole"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ClinicalCareContext": {
-      "iri": "https://w3.org/ns/ucm#ClinicalCareContext",
+    "https://www.w3.org/ns/ucm#ClinicalCareContext": {
+      "iri": "https://www.w3.org/ns/ucm#ClinicalCareContext",
       "term": "ClinicalCareContext",
       "label": "Clinical Care Context",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SemanticContext"
+        "https://www.w3.org/ns/ucm#SemanticContext"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ClinicalDomain": {
-      "iri": "https://w3.org/ns/ucm#ClinicalDomain",
+    "https://www.w3.org/ns/ucm#ClinicalDomain": {
+      "iri": "https://www.w3.org/ns/ucm#ClinicalDomain",
       "term": "ClinicalDomain",
       "label": "Clinical Domain",
       "comment": null,
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ClinicalEncounter": {
-      "iri": "https://w3.org/ns/ucm#ClinicalEncounter",
+    "https://www.w3.org/ns/ucm#ClinicalEncounter": {
+      "iri": "https://www.w3.org/ns/ucm#ClinicalEncounter",
       "term": "ClinicalEncounter",
       "label": "Clinical Encounter",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Encounter"
+        "https://www.w3.org/ns/ucm#Encounter"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ClinicalStatement": {
-      "iri": "https://w3.org/ns/ucm#ClinicalStatement",
+    "https://www.w3.org/ns/ucm#ClinicalStatement": {
+      "iri": "https://www.w3.org/ns/ucm#ClinicalStatement",
       "term": "ClinicalStatement",
       "label": "Clinical Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Statement"
+        "https://www.w3.org/ns/ucm#Statement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CommunityGroup": {
-      "iri": "https://w3.org/ns/ucm#CommunityGroup",
+    "https://www.w3.org/ns/ucm#CommunityGroup": {
+      "iri": "https://www.w3.org/ns/ucm#CommunityGroup",
       "term": "CommunityGroup",
       "label": "Community Group",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SocialGroupEntity"
+        "https://www.w3.org/ns/ucm#SocialGroupEntity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CoordinationRequest": {
-      "iri": "https://w3.org/ns/ucm#CoordinationRequest",
+    "https://www.w3.org/ns/ucm#CoordinationRequest": {
+      "iri": "https://www.w3.org/ns/ucm#CoordinationRequest",
       "term": "CoordinationRequest",
       "label": "Care Coordination Request",
       "comment": "A process in which coordination is requested between participating entities.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CoordinativeActivity": {
-      "iri": "https://w3.org/ns/ucm#CoordinativeActivity",
+    "https://www.w3.org/ns/ucm#CoordinativeActivity": {
+      "iri": "https://www.w3.org/ns/ucm#CoordinativeActivity",
       "term": "CoordinativeActivity",
       "label": "Coordinative Care Activity",
       "comment": "A situated activity whose process is shared by participating entities in its care coordination lifecycle.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#CoordinatorRole": {
-      "iri": "https://w3.org/ns/ucm#CoordinatorRole",
+    "https://www.w3.org/ns/ucm#CoordinatorRole": {
+      "iri": "https://www.w3.org/ns/ucm#CoordinatorRole",
       "term": "CoordinatorRole",
       "label": "Coordinator Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Role"
+        "https://www.w3.org/ns/ucm#Role"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#DefinitionArtifact": {
-      "iri": "https://w3.org/ns/ucm#DefinitionArtifact",
+    "https://www.w3.org/ns/ucm#DefinitionArtifact": {
+      "iri": "https://www.w3.org/ns/ucm#DefinitionArtifact",
       "term": "DefinitionArtifact",
       "label": "Definition Artifact",
       "comment": "A ruleset, policy definition, constraint, or governance artifact.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Device": {
-      "iri": "https://w3.org/ns/ucm#Device",
+    "https://www.w3.org/ns/ucm#Device": {
+      "iri": "https://www.w3.org/ns/ucm#Device",
       "term": "Device",
       "label": "Device",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Entity"
+        "https://www.w3.org/ns/ucm#Entity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#DiagnosisStatement": {
-      "iri": "https://w3.org/ns/ucm#DiagnosisStatement",
+    "https://www.w3.org/ns/ucm#DiagnosisStatement": {
+      "iri": "https://www.w3.org/ns/ucm#DiagnosisStatement",
       "term": "DiagnosisStatement",
       "label": "Diagnosis Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#ClinicalStatement"
+        "https://www.w3.org/ns/ucm#ClinicalStatement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#EligibilityDetermination": {
-      "iri": "https://w3.org/ns/ucm#EligibilityDetermination",
+    "https://www.w3.org/ns/ucm#EligibilityDetermination": {
+      "iri": "https://www.w3.org/ns/ucm#EligibilityDetermination",
       "term": "EligibilityDetermination",
       "label": "Eligibility Determination",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#EligibilityRuleset": {
-      "iri": "https://w3.org/ns/ucm#EligibilityRuleset",
+    "https://www.w3.org/ns/ucm#EligibilityRuleset": {
+      "iri": "https://www.w3.org/ns/ucm#EligibilityRuleset",
       "term": "EligibilityRuleset",
       "label": "Eligibility Ruleset",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#DefinitionArtifact"
+        "https://www.w3.org/ns/ucm#DefinitionArtifact"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Encounter": {
-      "iri": "https://w3.org/ns/ucm#Encounter",
+    "https://www.w3.org/ns/ucm#Encounter": {
+      "iri": "https://www.w3.org/ns/ucm#Encounter",
       "term": "Encounter",
       "label": "Encounter",
       "comment": "A bounded contextual interaction process.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Entity": {
-      "iri": "https://w3.org/ns/ucm#Entity",
+    "https://www.w3.org/ns/ucm#Entity": {
+      "iri": "https://www.w3.org/ns/ucm#Entity",
       "term": "Entity",
       "label": "Entity",
       "comment": "A stable independently identifiable semantic thing.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Handshake": {
-      "iri": "https://w3.org/ns/ucm#Handshake",
+    "https://www.w3.org/ns/ucm#Handshake": {
+      "iri": "https://www.w3.org/ns/ucm#Handshake",
       "term": "Handshake",
       "label": "Handshake",
       "comment": "A coordinative process through which participating entities negotiate mutual participation in a shared activity.",
       "superclasses": [
-        "https://w3.org/ns/ucm#CoordinativeActivity"
+        "https://www.w3.org/ns/ucm#CoordinativeActivity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Household": {
-      "iri": "https://w3.org/ns/ucm#Household",
+    "https://www.w3.org/ns/ucm#Household": {
+      "iri": "https://www.w3.org/ns/ucm#Household",
       "term": "Household",
       "label": "Household",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SocialGroupEntity"
+        "https://www.w3.org/ns/ucm#SocialGroupEntity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#HousingAssessment": {
-      "iri": "https://w3.org/ns/ucm#HousingAssessment",
+    "https://www.w3.org/ns/ucm#HousingAssessment": {
+      "iri": "https://www.w3.org/ns/ucm#HousingAssessment",
       "term": "HousingAssessment",
       "label": "Housing Assessment",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#HousingContext": {
-      "iri": "https://w3.org/ns/ucm#HousingContext",
+    "https://www.w3.org/ns/ucm#HousingContext": {
+      "iri": "https://www.w3.org/ns/ucm#HousingContext",
       "term": "HousingContext",
       "label": "Housing Context",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SemanticContext"
+        "https://www.w3.org/ns/ucm#SemanticContext"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#HousingDomain": {
-      "iri": "https://w3.org/ns/ucm#HousingDomain",
+    "https://www.w3.org/ns/ucm#HousingDomain": {
+      "iri": "https://www.w3.org/ns/ucm#HousingDomain",
       "term": "HousingDomain",
       "label": "Housing Domain",
       "comment": null,
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#HousingEligibilityContext": {
-      "iri": "https://w3.org/ns/ucm#HousingEligibilityContext",
+    "https://www.w3.org/ns/ucm#HousingEligibilityContext": {
+      "iri": "https://www.w3.org/ns/ucm#HousingEligibilityContext",
       "term": "HousingEligibilityContext",
       "label": "Housing Eligibility Context",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#HousingContext"
+        "https://www.w3.org/ns/ucm#HousingContext"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#HousingEligibilityStatement": {
-      "iri": "https://w3.org/ns/ucm#HousingEligibilityStatement",
+    "https://www.w3.org/ns/ucm#HousingEligibilityStatement": {
+      "iri": "https://www.w3.org/ns/ucm#HousingEligibilityStatement",
       "term": "HousingEligibilityStatement",
       "label": "Housing Eligibility Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#HousingStatement"
+        "https://www.w3.org/ns/ucm#HousingStatement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#HousingStatement": {
-      "iri": "https://w3.org/ns/ucm#HousingStatement",
+    "https://www.w3.org/ns/ucm#HousingStatement": {
+      "iri": "https://www.w3.org/ns/ucm#HousingStatement",
       "term": "HousingStatement",
       "label": "Housing Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Statement"
+        "https://www.w3.org/ns/ucm#Statement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#InformationArtifact": {
-      "iri": "https://w3.org/ns/ucm#InformationArtifact",
+    "https://www.w3.org/ns/ucm#InformationArtifact": {
+      "iri": "https://www.w3.org/ns/ucm#InformationArtifact",
       "term": "InformationArtifact",
       "label": "Information Artifact",
       "comment": "A logical information abstraction or computable information object.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Entity"
+        "https://www.w3.org/ns/ucm#Entity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Location": {
-      "iri": "https://w3.org/ns/ucm#Location",
+    "https://www.w3.org/ns/ucm#Location": {
+      "iri": "https://www.w3.org/ns/ucm#Location",
       "term": "Location",
       "label": "Location",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Entity"
+        "https://www.w3.org/ns/ucm#Entity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#MatchClaim": {
-      "iri": "https://w3.org/ns/ucm#MatchClaim",
+    "https://www.w3.org/ns/ucm#MatchClaim": {
+      "iri": "https://www.w3.org/ns/ucm#MatchClaim",
       "term": "MatchClaim",
       "label": "Match Claim",
       "comment": "An assertion that two or more entity references co-refer to the same identifiable entity.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Statement"
+        "https://www.w3.org/ns/ucm#Statement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Membership": {
-      "iri": "https://w3.org/ns/ucm#Membership",
+    "https://www.w3.org/ns/ucm#Membership": {
+      "iri": "https://www.w3.org/ns/ucm#Membership",
       "term": "Membership",
       "label": "Membership",
       "comment": "Contextual membership relationship between an Entity and a SocialGroupEntity.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#MembershipCriteria": {
-      "iri": "https://w3.org/ns/ucm#MembershipCriteria",
+    "https://www.w3.org/ns/ucm#MembershipCriteria": {
+      "iri": "https://www.w3.org/ns/ucm#MembershipCriteria",
       "term": "MembershipCriteria",
       "label": "Membership Criteria",
       "comment": "Rules or conditions defining membership within a SocialGroupEntity.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ObservationStatement": {
-      "iri": "https://w3.org/ns/ucm#ObservationStatement",
+    "https://www.w3.org/ns/ucm#ObservationStatement": {
+      "iri": "https://www.w3.org/ns/ucm#ObservationStatement",
       "term": "ObservationStatement",
       "label": "Observation Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#ClinicalStatement"
+        "https://www.w3.org/ns/ucm#ClinicalStatement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Organization": {
-      "iri": "https://w3.org/ns/ucm#Organization",
+    "https://www.w3.org/ns/ucm#Organization": {
+      "iri": "https://www.w3.org/ns/ucm#Organization",
       "term": "Organization",
       "label": "Organization",
       "comment": "Operational or governance-oriented social entity maintaining continuity independent of membership changes.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Entity"
+        "https://www.w3.org/ns/ucm#Entity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Participation": {
-      "iri": "https://w3.org/ns/ucm#Participation",
+    "https://www.w3.org/ns/ucm#Participation": {
+      "iri": "https://www.w3.org/ns/ucm#Participation",
       "term": "Participation",
       "label": "Participation",
       "comment": "Contextual involvement of an Entity within a Process and Semantic Context.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#PatientRole": {
-      "iri": "https://w3.org/ns/ucm#PatientRole",
+    "https://www.w3.org/ns/ucm#PatientRole": {
+      "iri": "https://www.w3.org/ns/ucm#PatientRole",
       "term": "PatientRole",
       "label": "Patient Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SubjectRole"
+        "https://www.w3.org/ns/ucm#SubjectRole"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Person": {
-      "iri": "https://w3.org/ns/ucm#Person",
+    "https://www.w3.org/ns/ucm#Person": {
+      "iri": "https://www.w3.org/ns/ucm#Person",
       "term": "Person",
       "label": "Person",
       "comment": "A homo sapiens (NCBI) with the social context of a Person.  Looking for an object property of cco:PersonRole to have a \"similar to\" skos: relationship.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Entity"
+        "https://www.w3.org/ns/ucm#Entity"
       ],
       "equivalent_classes": [
         "http://purl.bioontology.org/ontology/SNOMEDCT#337915000",
@@ -458,250 +458,250 @@
         "https://www.commoncoreontologies.org/AgentOntology#ont00001262"
       ]
     },
-    "https://w3.org/ns/ucm#PolicyDefinition": {
-      "iri": "https://w3.org/ns/ucm#PolicyDefinition",
+    "https://www.w3.org/ns/ucm#PolicyDefinition": {
+      "iri": "https://www.w3.org/ns/ucm#PolicyDefinition",
       "term": "PolicyDefinition",
       "label": "Policy Definition",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#DefinitionArtifact"
+        "https://www.w3.org/ns/ucm#DefinitionArtifact"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Process": {
-      "iri": "https://w3.org/ns/ucm#Process",
+    "https://www.w3.org/ns/ucm#Process": {
+      "iri": "https://www.w3.org/ns/ucm#Process",
       "term": "Process",
       "label": "Process",
       "comment": "A bounded interaction or activity occurring over time.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ProgramDefinition": {
-      "iri": "https://w3.org/ns/ucm#ProgramDefinition",
+    "https://www.w3.org/ns/ucm#ProgramDefinition": {
+      "iri": "https://www.w3.org/ns/ucm#ProgramDefinition",
       "term": "ProgramDefinition",
       "label": "Program Definition",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#DefinitionArtifact"
+        "https://www.w3.org/ns/ucm#DefinitionArtifact"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ProviderRole": {
-      "iri": "https://w3.org/ns/ucm#ProviderRole",
+    "https://www.w3.org/ns/ucm#ProviderRole": {
+      "iri": "https://www.w3.org/ns/ucm#ProviderRole",
       "term": "ProviderRole",
       "label": "Provider Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Role"
+        "https://www.w3.org/ns/ucm#Role"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#PublicHealthContext": {
-      "iri": "https://w3.org/ns/ucm#PublicHealthContext",
+    "https://www.w3.org/ns/ucm#PublicHealthContext": {
+      "iri": "https://www.w3.org/ns/ucm#PublicHealthContext",
       "term": "PublicHealthContext",
       "label": "Public Health Context",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SemanticContext"
+        "https://www.w3.org/ns/ucm#SemanticContext"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#PublicHealthDomain": {
-      "iri": "https://w3.org/ns/ucm#PublicHealthDomain",
+    "https://www.w3.org/ns/ucm#PublicHealthDomain": {
+      "iri": "https://www.w3.org/ns/ucm#PublicHealthDomain",
       "term": "PublicHealthDomain",
       "label": "Public Health Domain",
       "comment": null,
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#ResidentRole": {
-      "iri": "https://w3.org/ns/ucm#ResidentRole",
+    "https://www.w3.org/ns/ucm#ResidentRole": {
+      "iri": "https://www.w3.org/ns/ucm#ResidentRole",
       "term": "ResidentRole",
       "label": "Resident Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SubjectRole"
+        "https://www.w3.org/ns/ucm#SubjectRole"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Role": {
-      "iri": "https://w3.org/ns/ucm#Role",
+    "https://www.w3.org/ns/ucm#Role": {
+      "iri": "https://www.w3.org/ns/ucm#Role",
       "term": "Role",
       "label": "Role",
       "comment": "A contextual, anti-rigid classification assumed through participation.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SemanticConstraint": {
-      "iri": "https://w3.org/ns/ucm#SemanticConstraint",
+    "https://www.w3.org/ns/ucm#SemanticConstraint": {
+      "iri": "https://www.w3.org/ns/ucm#SemanticConstraint",
       "term": "SemanticConstraint",
       "label": "Semantic Constraint",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#DefinitionArtifact"
+        "https://www.w3.org/ns/ucm#DefinitionArtifact"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SemanticContext": {
-      "iri": "https://w3.org/ns/ucm#SemanticContext",
+    "https://www.w3.org/ns/ucm#SemanticContext": {
+      "iri": "https://www.w3.org/ns/ucm#SemanticContext",
       "term": "SemanticContext",
       "label": "Semantic Context",
       "comment": "An interpretive environment, governance scope, or applicability boundary.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SocialCareContext": {
-      "iri": "https://w3.org/ns/ucm#SocialCareContext",
+    "https://www.w3.org/ns/ucm#SocialCareContext": {
+      "iri": "https://www.w3.org/ns/ucm#SocialCareContext",
       "term": "SocialCareContext",
       "label": "Social Care Context",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#SemanticContext"
+        "https://www.w3.org/ns/ucm#SemanticContext"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SocialCareDomain": {
-      "iri": "https://w3.org/ns/ucm#SocialCareDomain",
+    "https://www.w3.org/ns/ucm#SocialCareDomain": {
+      "iri": "https://www.w3.org/ns/ucm#SocialCareDomain",
       "term": "SocialCareDomain",
       "label": "Social Care Domain",
       "comment": null,
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SocialCareInteraction": {
-      "iri": "https://w3.org/ns/ucm#SocialCareInteraction",
+    "https://www.w3.org/ns/ucm#SocialCareInteraction": {
+      "iri": "https://www.w3.org/ns/ucm#SocialCareInteraction",
       "term": "SocialCareInteraction",
       "label": "Social Care Interaction",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Process"
+        "https://www.w3.org/ns/ucm#Process"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SocialCareStatement": {
-      "iri": "https://w3.org/ns/ucm#SocialCareStatement",
+    "https://www.w3.org/ns/ucm#SocialCareStatement": {
+      "iri": "https://www.w3.org/ns/ucm#SocialCareStatement",
       "term": "SocialCareStatement",
       "label": "Social Care Statement",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Statement"
+        "https://www.w3.org/ns/ucm#Statement"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SocialGroupEntity": {
-      "iri": "https://w3.org/ns/ucm#SocialGroupEntity",
+    "https://www.w3.org/ns/ucm#SocialGroupEntity": {
+      "iri": "https://www.w3.org/ns/ucm#SocialGroupEntity",
       "term": "SocialGroupEntity",
       "label": "Social Group Entity",
       "comment": "A collective grouping of participating entities.",
       "superclasses": [
-        "https://w3.org/ns/ucm#Entity"
+        "https://www.w3.org/ns/ucm#Entity"
       ],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#Statement": {
-      "iri": "https://w3.org/ns/ucm#Statement",
+    "https://www.w3.org/ns/ucm#Statement": {
+      "iri": "https://www.w3.org/ns/ucm#Statement",
       "term": "Statement",
       "label": "Statement",
       "comment": "An informational assertion, finding, determination, or conclusion.",
       "superclasses": [],
       "equivalent_classes": []
     },
-    "https://w3.org/ns/ucm#SubjectRole": {
-      "iri": "https://w3.org/ns/ucm#SubjectRole",
+    "https://www.w3.org/ns/ucm#SubjectRole": {
+      "iri": "https://www.w3.org/ns/ucm#SubjectRole",
       "term": "SubjectRole",
       "label": "Subject Role",
       "comment": null,
       "superclasses": [
-        "https://w3.org/ns/ucm#Role"
+        "https://www.w3.org/ns/ucm#Role"
       ],
       "equivalent_classes": []
     }
   },
   "properties": {
-    "https://w3.org/ns/ucm#acceptsRequest": {
-      "iri": "https://w3.org/ns/ucm#acceptsRequest",
+    "https://www.w3.org/ns/ucm#acceptsRequest": {
+      "iri": "https://www.w3.org/ns/ucm#acceptsRequest",
       "term": "acceptsRequest",
       "label": "accepts request",
       "comment": "A participating entity accepts a care coordination request.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Entity",
-      "range": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Entity",
+      "range": "https://www.w3.org/ns/ucm#Participation",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#affiliatedWith": {
-      "iri": "https://w3.org/ns/ucm#affiliatedWith",
+    "https://www.w3.org/ns/ucm#affiliatedWith": {
+      "iri": "https://www.w3.org/ns/ucm#affiliatedWith",
       "term": "affiliatedWith",
       "label": "affiliated with",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Person",
-      "range": "https://w3.org/ns/ucm#Organization",
+      "domain": "https://www.w3.org/ns/ucm#Person",
+      "range": "https://www.w3.org/ns/ucm#Organization",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#assumesRole": {
-      "iri": "https://w3.org/ns/ucm#assumesRole",
+    "https://www.w3.org/ns/ucm#assumesRole": {
+      "iri": "https://www.w3.org/ns/ucm#assumesRole",
       "term": "assumesRole",
       "label": "assumes role",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Participation",
-      "range": "https://w3.org/ns/ucm#Role",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
+      "range": "https://www.w3.org/ns/ucm#Role",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#definedByArtifact": {
-      "iri": "https://w3.org/ns/ucm#definedByArtifact",
+    "https://www.w3.org/ns/ucm#definedByArtifact": {
+      "iri": "https://www.w3.org/ns/ucm#definedByArtifact",
       "term": "definedByArtifact",
       "label": "defined by artifact",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#SemanticContext",
-      "range": "https://w3.org/ns/ucm#DefinitionArtifact",
+      "domain": "https://www.w3.org/ns/ucm#SemanticContext",
+      "range": "https://www.w3.org/ns/ucm#DefinitionArtifact",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#definedByCriteria": {
-      "iri": "https://w3.org/ns/ucm#definedByCriteria",
+    "https://www.w3.org/ns/ucm#definedByCriteria": {
+      "iri": "https://www.w3.org/ns/ucm#definedByCriteria",
       "term": "definedByCriteria",
       "label": "defined by criteria",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#SocialGroupEntity",
-      "range": "https://w3.org/ns/ucm#MembershipCriteria",
+      "domain": "https://www.w3.org/ns/ucm#SocialGroupEntity",
+      "range": "https://www.w3.org/ns/ucm#MembershipCriteria",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#enactiveDuring": {
-      "iri": "https://w3.org/ns/ucm#enactiveDuring",
+    "https://www.w3.org/ns/ucm#enactiveDuring": {
+      "iri": "https://www.w3.org/ns/ucm#enactiveDuring",
       "term": "enactiveDuring",
       "label": "enactive during",
       "comment": "Relates a participation to the temporal extent during which that participation is enactive.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
       "range": "http://www.w3.org/2006/time#TemporalEntity",
       "superproperties": [
-        "https://w3.org/ns/ucm#hasTemporalContext"
+        "https://www.w3.org/ns/ucm#hasTemporalContext"
       ]
     },
-    "https://w3.org/ns/ucm#generatedByProcess": {
-      "iri": "https://w3.org/ns/ucm#generatedByProcess",
+    "https://www.w3.org/ns/ucm#generatedByProcess": {
+      "iri": "https://www.w3.org/ns/ucm#generatedByProcess",
       "term": "generatedByProcess",
       "label": "generated by process",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Statement",
-      "range": "https://w3.org/ns/ucm#Process",
+      "domain": "https://www.w3.org/ns/ucm#Statement",
+      "range": "https://www.w3.org/ns/ucm#Process",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasActivityFocus": {
-      "iri": "https://w3.org/ns/ucm#hasActivityFocus",
+    "https://www.w3.org/ns/ucm#hasActivityFocus": {
+      "iri": "https://www.w3.org/ns/ucm#hasActivityFocus",
       "term": "hasActivityFocus",
       "label": "has activity focus",
       "comment": "Situates a process within an activity focus.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Process",
-      "range": "https://w3.org/ns/ucm#ActivityFocus",
+      "domain": "https://www.w3.org/ns/ucm#Process",
+      "range": "https://www.w3.org/ns/ucm#ActivityFocus",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasCareTrajectoryContext": {
-      "iri": "https://w3.org/ns/ucm#hasCareTrajectoryContext",
+    "https://www.w3.org/ns/ucm#hasCareTrajectoryContext": {
+      "iri": "https://www.w3.org/ns/ucm#hasCareTrajectoryContext",
       "term": "hasCareTrajectoryContext",
       "label": "has care trajectory context",
       "comment": "Relates a UCM semantic subject to a temporal position or extent defined relative to the internal progression of a process, state trajectory, or coordinated activity rather than directly relative to an external clock or calendar.",
@@ -710,78 +710,78 @@
       "range": null,
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasClient": {
-      "iri": "https://w3.org/ns/ucm#hasClient",
+    "https://www.w3.org/ns/ucm#hasClient": {
+      "iri": "https://www.w3.org/ns/ucm#hasClient",
       "term": "hasClient",
       "label": "has client",
       "comment": "Convenience projection derived from participation semantics.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#SocialCareInteraction",
-      "range": "https://w3.org/ns/ucm#Person",
+      "domain": "https://www.w3.org/ns/ucm#SocialCareInteraction",
+      "range": "https://www.w3.org/ns/ucm#Person",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasLifecycleState": {
-      "iri": "https://w3.org/ns/ucm#hasLifecycleState",
+    "https://www.w3.org/ns/ucm#hasLifecycleState": {
+      "iri": "https://www.w3.org/ns/ucm#hasLifecycleState",
       "term": "hasLifecycleState",
       "label": "has lifecycle state",
       "comment": "Relates a process to a lifecycle state.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Process",
+      "domain": "https://www.w3.org/ns/ucm#Process",
       "range": "http://www.w3.org/2004/02/skos/core#Concept",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasMember": {
-      "iri": "https://w3.org/ns/ucm#hasMember",
+    "https://www.w3.org/ns/ucm#hasMember": {
+      "iri": "https://www.w3.org/ns/ucm#hasMember",
       "term": "hasMember",
       "label": "has member",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#SocialGroupEntity",
-      "range": "https://w3.org/ns/ucm#Entity",
+      "domain": "https://www.w3.org/ns/ucm#SocialGroupEntity",
+      "range": "https://www.w3.org/ns/ucm#Entity",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasMembership": {
-      "iri": "https://w3.org/ns/ucm#hasMembership",
+    "https://www.w3.org/ns/ucm#hasMembership": {
+      "iri": "https://www.w3.org/ns/ucm#hasMembership",
       "term": "hasMembership",
       "label": "has membership",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Entity",
-      "range": "https://w3.org/ns/ucm#Membership",
+      "domain": "https://www.w3.org/ns/ucm#Entity",
+      "range": "https://www.w3.org/ns/ucm#Membership",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasParticipant": {
-      "iri": "https://w3.org/ns/ucm#hasParticipant",
+    "https://www.w3.org/ns/ucm#hasParticipant": {
+      "iri": "https://www.w3.org/ns/ucm#hasParticipant",
       "term": "hasParticipant",
       "label": "has participant",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Process",
-      "range": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Process",
+      "range": "https://www.w3.org/ns/ucm#Participation",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasPatient": {
-      "iri": "https://w3.org/ns/ucm#hasPatient",
+    "https://www.w3.org/ns/ucm#hasPatient": {
+      "iri": "https://www.w3.org/ns/ucm#hasPatient",
       "term": "hasPatient",
       "label": "has patient",
       "comment": "Convenience projection derived from participation semantics.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#ClinicalEncounter",
-      "range": "https://w3.org/ns/ucm#Person",
+      "domain": "https://www.w3.org/ns/ucm#ClinicalEncounter",
+      "range": "https://www.w3.org/ns/ucm#Person",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasResident": {
-      "iri": "https://w3.org/ns/ucm#hasResident",
+    "https://www.w3.org/ns/ucm#hasResident": {
+      "iri": "https://www.w3.org/ns/ucm#hasResident",
       "term": "hasResident",
       "label": "has resident",
       "comment": "Convenience projection derived from participation semantics.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#HousingAssessment",
-      "range": "https://w3.org/ns/ucm#Person",
+      "domain": "https://www.w3.org/ns/ucm#HousingAssessment",
+      "range": "https://www.w3.org/ns/ucm#Person",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#hasTemporalContext": {
-      "iri": "https://w3.org/ns/ucm#hasTemporalContext",
+    "https://www.w3.org/ns/ucm#hasTemporalContext": {
+      "iri": "https://www.w3.org/ns/ucm#hasTemporalContext",
       "term": "hasTemporalContext",
       "label": "has temporal context",
       "comment": "Relates a UCM semantic subject to a temporal entity that qualifies when that subject occurs, obtains, applies, participates, or is otherwise temporally situated.",
@@ -790,140 +790,140 @@
       "range": "http://www.w3.org/2006/time#TemporalEntity",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#locatedAt": {
-      "iri": "https://w3.org/ns/ucm#locatedAt",
+    "https://www.w3.org/ns/ucm#locatedAt": {
+      "iri": "https://www.w3.org/ns/ucm#locatedAt",
       "term": "locatedAt",
       "label": "located at",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Entity",
-      "range": "https://w3.org/ns/ucm#Location",
+      "domain": "https://www.w3.org/ns/ucm#Entity",
+      "range": "https://www.w3.org/ns/ucm#Location",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#madeWithinContext": {
-      "iri": "https://w3.org/ns/ucm#madeWithinContext",
+    "https://www.w3.org/ns/ucm#madeWithinContext": {
+      "iri": "https://www.w3.org/ns/ucm#madeWithinContext",
       "term": "madeWithinContext",
       "label": "made within context",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Statement",
-      "range": "https://w3.org/ns/ucm#SemanticContext",
+      "domain": "https://www.w3.org/ns/ucm#Statement",
+      "range": "https://www.w3.org/ns/ucm#SemanticContext",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#memberOf": {
-      "iri": "https://w3.org/ns/ucm#memberOf",
+    "https://www.w3.org/ns/ucm#memberOf": {
+      "iri": "https://www.w3.org/ns/ucm#memberOf",
       "term": "memberOf",
       "label": "member of",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Entity",
-      "range": "https://w3.org/ns/ucm#SocialGroupEntity",
+      "domain": "https://www.w3.org/ns/ucm#Entity",
+      "range": "https://www.w3.org/ns/ucm#SocialGroupEntity",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#membershipIn": {
-      "iri": "https://w3.org/ns/ucm#membershipIn",
+    "https://www.w3.org/ns/ucm#membershipIn": {
+      "iri": "https://www.w3.org/ns/ucm#membershipIn",
       "term": "membershipIn",
       "label": "membership in",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Membership",
-      "range": "https://w3.org/ns/ucm#SocialGroupEntity",
+      "domain": "https://www.w3.org/ns/ucm#Membership",
+      "range": "https://www.w3.org/ns/ucm#SocialGroupEntity",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#negotiates": {
-      "iri": "https://w3.org/ns/ucm#negotiates",
+    "https://www.w3.org/ns/ucm#negotiates": {
+      "iri": "https://www.w3.org/ns/ucm#negotiates",
       "term": "negotiates",
       "label": "negotiates",
       "comment": "Relates a handshake to the care coordination process whose participation relationship it negotiates.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Handshake",
-      "range": "https://w3.org/ns/ucm#Process",
+      "domain": "https://www.w3.org/ns/ucm#Handshake",
+      "range": "https://www.w3.org/ns/ucm#Process",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#occursDuring": {
-      "iri": "https://w3.org/ns/ucm#occursDuring",
+    "https://www.w3.org/ns/ucm#occursDuring": {
+      "iri": "https://www.w3.org/ns/ucm#occursDuring",
       "term": "occursDuring",
       "label": "occurs during",
       "comment": "Relates a process to the temporal extent during which the process occurs.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Process",
+      "domain": "https://www.w3.org/ns/ucm#Process",
       "range": "http://www.w3.org/2006/time#TemporalEntity",
       "superproperties": [
-        "https://w3.org/ns/ucm#hasTemporalContext"
+        "https://www.w3.org/ns/ucm#hasTemporalContext"
       ]
     },
-    "https://w3.org/ns/ucm#occursWithin": {
-      "iri": "https://w3.org/ns/ucm#occursWithin",
+    "https://www.w3.org/ns/ucm#occursWithin": {
+      "iri": "https://www.w3.org/ns/ucm#occursWithin",
       "term": "occursWithin",
       "label": "occurs within",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Participation",
-      "range": "https://w3.org/ns/ucm#Process",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
+      "range": "https://www.w3.org/ns/ucm#Process",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#participatesThrough": {
-      "iri": "https://w3.org/ns/ucm#participatesThrough",
+    "https://www.w3.org/ns/ucm#participatesThrough": {
+      "iri": "https://www.w3.org/ns/ucm#participatesThrough",
       "term": "participatesThrough",
       "label": "participates through",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Entity",
-      "range": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Entity",
+      "range": "https://www.w3.org/ns/ucm#Participation",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#participatingEntity": {
-      "iri": "https://w3.org/ns/ucm#participatingEntity",
+    "https://www.w3.org/ns/ucm#participatingEntity": {
+      "iri": "https://www.w3.org/ns/ucm#participatingEntity",
       "term": "participatingEntity",
       "label": "participating entity",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Participation",
-      "range": "https://w3.org/ns/ucm#Entity",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
+      "range": "https://www.w3.org/ns/ucm#Entity",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#participationContext": {
-      "iri": "https://w3.org/ns/ucm#participationContext",
+    "https://www.w3.org/ns/ucm#participationContext": {
+      "iri": "https://www.w3.org/ns/ucm#participationContext",
       "term": "participationContext",
       "label": "participation context",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Participation",
-      "range": "https://w3.org/ns/ucm#SemanticContext",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
+      "range": "https://www.w3.org/ns/ucm#SemanticContext",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#qualifiesForMembership": {
-      "iri": "https://w3.org/ns/ucm#qualifiesForMembership",
+    "https://www.w3.org/ns/ucm#qualifiesForMembership": {
+      "iri": "https://www.w3.org/ns/ucm#qualifiesForMembership",
       "term": "qualifiesForMembership",
       "label": "qualifies for membership",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Entity",
-      "range": "https://w3.org/ns/ucm#MembershipCriteria",
+      "domain": "https://www.w3.org/ns/ucm#Entity",
+      "range": "https://www.w3.org/ns/ucm#MembershipCriteria",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#scopedBy": {
-      "iri": "https://w3.org/ns/ucm#scopedBy",
+    "https://www.w3.org/ns/ucm#scopedBy": {
+      "iri": "https://www.w3.org/ns/ucm#scopedBy",
       "term": "scopedBy",
       "label": "scoped by",
       "comment": null,
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Participation",
-      "range": "https://w3.org/ns/ucm#SemanticContext",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
+      "range": "https://www.w3.org/ns/ucm#SemanticContext",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#statementSubject": {
-      "iri": "https://w3.org/ns/ucm#statementSubject",
+    "https://www.w3.org/ns/ucm#statementSubject": {
+      "iri": "https://www.w3.org/ns/ucm#statementSubject",
       "term": "statementSubject",
       "label": "statement subject",
       "comment": "Relates a statement to the contextual participation it is about.",
       "kind": "object",
-      "domain": "https://w3.org/ns/ucm#Statement",
-      "range": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Statement",
+      "range": "https://www.w3.org/ns/ucm#Participation",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#validDuring": {
-      "iri": "https://w3.org/ns/ucm#validDuring",
+    "https://www.w3.org/ns/ucm#validDuring": {
+      "iri": "https://www.w3.org/ns/ucm#validDuring",
       "term": "validDuring",
       "label": "valid during",
       "comment": "Relates a semantic subject or statement to the temporal extent during which its described condition, state, relationship, participation, or other semantics apply.",
@@ -931,49 +931,49 @@
       "domain": null,
       "range": "http://www.w3.org/2006/time#TemporalEntity",
       "superproperties": [
-        "https://w3.org/ns/ucm#hasTemporalContext"
+        "https://www.w3.org/ns/ucm#hasTemporalContext"
       ]
     },
-    "https://w3.org/ns/ucm#statementDate": {
-      "iri": "https://w3.org/ns/ucm#statementDate",
+    "https://www.w3.org/ns/ucm#statementDate": {
+      "iri": "https://www.w3.org/ns/ucm#statementDate",
       "term": "statementDate",
       "label": "statement date",
       "comment": null,
       "kind": "datatype",
-      "domain": "https://w3.org/ns/ucm#Statement",
+      "domain": "https://www.w3.org/ns/ucm#Statement",
       "range": "http://www.w3.org/2001/XMLSchema#dateTime",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#validFrom": {
-      "iri": "https://w3.org/ns/ucm#validFrom",
+    "https://www.w3.org/ns/ucm#validFrom": {
+      "iri": "https://www.w3.org/ns/ucm#validFrom",
       "term": "validFrom",
       "label": "valid from",
       "comment": null,
       "kind": "datatype",
-      "domain": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
       "range": "http://www.w3.org/2001/XMLSchema#dateTime",
       "superproperties": []
     },
-    "https://w3.org/ns/ucm#validTo": {
-      "iri": "https://w3.org/ns/ucm#validTo",
+    "https://www.w3.org/ns/ucm#validTo": {
+      "iri": "https://www.w3.org/ns/ucm#validTo",
       "term": "validTo",
       "label": "valid to",
       "comment": null,
       "kind": "datatype",
-      "domain": "https://w3.org/ns/ucm#Participation",
+      "domain": "https://www.w3.org/ns/ucm#Participation",
       "range": "http://www.w3.org/2001/XMLSchema#dateTime",
       "superproperties": []
     }
   },
   "schemes": {
-    "https://w3.org/ns/ucm#LifecycleState": {
-      "iri": "https://w3.org/ns/ucm#LifecycleState",
+    "https://www.w3.org/ns/ucm#LifecycleState": {
+      "iri": "https://www.w3.org/ns/ucm#LifecycleState",
       "term": "LifecycleState",
       "label": "Lifecycle State",
       "description": "A state associated with a process during a portion of its lifecycle.",
       "concepts": [
         {
-          "iri": "https://w3.org/ns/ucm#Accepted",
+          "iri": "https://www.w3.org/ns/ucm#Accepted",
           "term": "Accepted",
           "label": "Accepted Care Coordination Lifecycle",
           "alt_labels": [
@@ -982,7 +982,7 @@
           "definition": "A care coordination request that has been accepted for ongoing care."
         },
         {
-          "iri": "https://w3.org/ns/ucm#Declined",
+          "iri": "https://www.w3.org/ns/ucm#Declined",
           "term": "Declined",
           "label": "Declined Care Coordination Lifecycle",
           "alt_labels": [
@@ -991,7 +991,7 @@
           "definition": "This care request was denied."
         },
         {
-          "iri": "https://w3.org/ns/ucm#Pending",
+          "iri": "https://www.w3.org/ns/ucm#Pending",
           "term": "Pending",
           "label": "Pending Care Coordination Lifecycle",
           "alt_labels": [
@@ -1004,13 +1004,13 @@
   },
   "shapes": [
     {
-      "iri": "https://w3.org/ns/ucm#AcceptsRequestShape",
+      "iri": "https://www.w3.org/ns/ucm#AcceptsRequestShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#acceptsRequest"
+        "https://www.w3.org/ns/ucm#acceptsRequest"
       ],
       "target_objects_of": [],
       "node_kind": null,
@@ -1021,7 +1021,7 @@
           "tier": "Recommended",
           "message": "acceptsRequest target is not typed as ucm:Participation.",
           "paths": [
-            "https://w3.org/ns/ucm#acceptsRequest"
+            "https://www.w3.org/ns/ucm#acceptsRequest"
           ],
           "inverse": false,
           "min_count": null,
@@ -1029,20 +1029,20 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Participation"
+            "https://www.w3.org/ns/ucm#Participation"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#ActivityFocusTypeShape",
+      "iri": "https://www.w3.org/ns/ucm#ActivityFocusTypeShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#hasActivityFocus"
+        "https://www.w3.org/ns/ucm#hasActivityFocus"
       ],
       "target_objects_of": [],
       "node_kind": null,
@@ -1053,7 +1053,7 @@
           "tier": "Recommended",
           "message": "Activity focus is not typed as ucm:ActivityFocus.",
           "paths": [
-            "https://w3.org/ns/ucm#hasActivityFocus"
+            "https://www.w3.org/ns/ucm#hasActivityFocus"
           ],
           "inverse": false,
           "min_count": null,
@@ -1061,20 +1061,20 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#ActivityFocus"
+            "https://www.w3.org/ns/ucm#ActivityFocus"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#AffiliationShape",
+      "iri": "https://www.w3.org/ns/ucm#AffiliationShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#affiliatedWith"
+        "https://www.w3.org/ns/ucm#affiliatedWith"
       ],
       "target_objects_of": [],
       "node_kind": null,
@@ -1085,7 +1085,7 @@
           "tier": "Recommended",
           "message": "Affiliation target is not typed as ucm:Organization.",
           "paths": [
-            "https://w3.org/ns/ucm#affiliatedWith"
+            "https://www.w3.org/ns/ucm#affiliatedWith"
           ],
           "inverse": false,
           "min_count": null,
@@ -1093,20 +1093,20 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Organization"
+            "https://www.w3.org/ns/ucm#Organization"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#CareTrajectoryShape",
+      "iri": "https://www.w3.org/ns/ucm#CareTrajectoryShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#hasCareTrajectoryContext"
+        "https://www.w3.org/ns/ucm#hasCareTrajectoryContext"
       ],
       "target_objects_of": [],
       "node_kind": null,
@@ -1117,7 +1117,7 @@
           "tier": "Recommended",
           "message": "Care trajectory context is not typed as ucm:CareTrajectoryContext.",
           "paths": [
-            "https://w3.org/ns/ucm#hasCareTrajectoryContext"
+            "https://www.w3.org/ns/ucm#hasCareTrajectoryContext"
           ],
           "inverse": false,
           "min_count": null,
@@ -1125,20 +1125,20 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#CareTrajectoryContext"
+            "https://www.w3.org/ns/ucm#CareTrajectoryContext"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#ContextArtifactShape",
+      "iri": "https://www.w3.org/ns/ucm#ContextArtifactShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#definedByArtifact"
+        "https://www.w3.org/ns/ucm#definedByArtifact"
       ],
       "target_objects_of": [],
       "node_kind": null,
@@ -1149,7 +1149,7 @@
           "tier": "Recommended",
           "message": "definedByArtifact target is not typed as ucm:DefinitionArtifact.",
           "paths": [
-            "https://w3.org/ns/ucm#definedByArtifact"
+            "https://www.w3.org/ns/ucm#definedByArtifact"
           ],
           "inverse": false,
           "min_count": null,
@@ -1157,20 +1157,20 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#DefinitionArtifact"
+            "https://www.w3.org/ns/ucm#DefinitionArtifact"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#CoordinativeActivityShape",
+      "iri": "https://www.w3.org/ns/ucm#CoordinativeActivityShape",
       "severity": "Warning",
       "tier": "Recommended",
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#CoordinationRequest",
-        "https://w3.org/ns/ucm#CoordinativeActivity"
+        "https://www.w3.org/ns/ucm#CoordinationRequest",
+        "https://www.w3.org/ns/ucm#CoordinativeActivity"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
@@ -1178,21 +1178,21 @@
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#CoordinativeActivityShape",
+          "iri": "https://www.w3.org/ns/ucm#CoordinativeActivityShape",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Coordination process declares no activity focus, directly or through a process it negotiates.",
-          "select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                FILTER NOT EXISTS { $this ucm:negotiates*/ucm:hasActivityFocus ?f }\n            }"
+          "select": "\n            PREFIX ucm: <https://www.w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                FILTER NOT EXISTS { $this ucm:negotiates*/ucm:hasActivityFocus ?f }\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#DualTemporalEncodingShape",
+      "iri": "https://www.w3.org/ns/ucm#DualTemporalEncodingShape",
       "severity": "Warning",
       "tier": "Recommended",
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Participation"
+        "https://www.w3.org/ns/ucm#Participation"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
@@ -1200,21 +1200,21 @@
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#DualTemporalEncodingShape",
+          "iri": "https://www.w3.org/ns/ucm#DualTemporalEncodingShape",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Participation uses both validFrom/validTo and enactiveDuring. The two encodings can diverge; prefer enactiveDuring.",
-          "select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                $this ucm:enactiveDuring ?iv .\n                FILTER EXISTS { $this ucm:validFrom|ucm:validTo ?x }\n            }"
+          "select": "\n            PREFIX ucm: <https://www.w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                $this ucm:enactiveDuring ?iv .\n                FILTER EXISTS { $this ucm:validFrom|ucm:validTo ?x }\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#HandshakeAcyclicShape",
+      "iri": "https://www.w3.org/ns/ucm#HandshakeAcyclicShape",
       "severity": "Violation",
       "tier": "Definitional",
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Handshake"
+        "https://www.w3.org/ns/ucm#Handshake"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
@@ -1222,33 +1222,33 @@
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#HandshakeAcyclicShape",
+          "iri": "https://www.w3.org/ns/ucm#HandshakeAcyclicShape",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "Handshake negotiates itself, directly or through a chain: the negotiation has no base case.",
-          "select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE { $this ucm:negotiates+ $this }"
+          "select": "\n            PREFIX ucm: <https://www.w3.org/ns/ucm#>\n            SELECT $this WHERE { $this ucm:negotiates+ $this }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#HandshakeShape",
+      "iri": "https://www.w3.org/ns/ucm#HandshakeShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Handshake"
+        "https://www.w3.org/ns/ucm#Handshake"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [
         {
-          "iri": "https://w3.org/ns/ucm#Handshake-negotiates",
+          "iri": "https://www.w3.org/ns/ucm#Handshake-negotiates",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A handshake negotiates participation in at least one process.",
           "paths": [
-            "https://w3.org/ns/ucm#negotiates"
+            "https://www.w3.org/ns/ucm#negotiates"
           ],
           "inverse": false,
           "min_count": 1,
@@ -1261,46 +1261,46 @@
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#LifecycleState-anchored",
+      "iri": "https://www.w3.org/ns/ucm#LifecycleState-anchored",
       "severity": "Warning",
       "tier": "Recommended",
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#hasLifecycleState"
+        "https://www.w3.org/ns/ucm#hasLifecycleState"
       ],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#LifecycleState-anchored",
+          "iri": "https://www.w3.org/ns/ucm#LifecycleState-anchored",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Lifecycle state is neither in ucm:LifecycleState nor SKOS-mapped to a concept that is.",
-          "select": "\n            PREFIX ucm:  <https://w3.org/ns/ucm#>\n            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n            SELECT $this ?value WHERE {\n                $this ucm:hasLifecycleState ?value .\n                FILTER NOT EXISTS { ?value skos:inScheme ucm:LifecycleState }\n                FILTER NOT EXISTS {\n                    ?value (skos:exactMatch|skos:closeMatch|skos:broadMatch|skos:narrowMatch)/skos:inScheme\n                           ucm:LifecycleState\n                }\n            }"
+          "select": "\n            PREFIX ucm:  <https://www.w3.org/ns/ucm#>\n            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n            SELECT $this ?value WHERE {\n                $this ucm:hasLifecycleState ?value .\n                FILTER NOT EXISTS { ?value skos:inScheme ucm:LifecycleState }\n                FILTER NOT EXISTS {\n                    ?value (skos:exactMatch|skos:closeMatch|skos:broadMatch|skos:narrowMatch)/skos:inScheme\n                           ucm:LifecycleState\n                }\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#LifecycleStateShape",
+      "iri": "https://www.w3.org/ns/ucm#LifecycleStateShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#hasLifecycleState"
+        "https://www.w3.org/ns/ucm#hasLifecycleState"
       ],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [
         {
-          "iri": "https://w3.org/ns/ucm#LifecycleState-single",
+          "iri": "https://www.w3.org/ns/ucm#LifecycleState-single",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A process holds at most one lifecycle state, identified by IRI. (Relax to temporalized state assertions once those exist.)",
           "paths": [
-            "https://w3.org/ns/ucm#hasLifecycleState"
+            "https://www.w3.org/ns/ucm#hasLifecycleState"
           ],
           "inverse": false,
           "min_count": null,
@@ -1313,24 +1313,24 @@
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#MembershipShape",
+      "iri": "https://www.w3.org/ns/ucm#MembershipShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Membership"
+        "https://www.w3.org/ns/ucm#Membership"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [
         {
-          "iri": "https://w3.org/ns/ucm#Membership-member",
+          "iri": "https://www.w3.org/ns/ucm#Membership-member",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A membership belongs to exactly one member entity (via hasMembership).",
           "paths": [
-            "https://w3.org/ns/ucm#hasMembership"
+            "https://www.w3.org/ns/ucm#hasMembership"
           ],
           "inverse": true,
           "min_count": 1,
@@ -1340,12 +1340,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Membership-group",
+          "iri": "https://www.w3.org/ns/ucm#Membership-group",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A membership is in exactly one social group.",
           "paths": [
-            "https://w3.org/ns/ucm#membershipIn"
+            "https://www.w3.org/ns/ucm#membershipIn"
           ],
           "inverse": false,
           "min_count": 1,
@@ -1355,12 +1355,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Membership-groupType",
+          "iri": "https://www.w3.org/ns/ucm#Membership-groupType",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Membership target is not typed as ucm:SocialGroupEntity.",
           "paths": [
-            "https://w3.org/ns/ucm#membershipIn"
+            "https://www.w3.org/ns/ucm#membershipIn"
           ],
           "inverse": false,
           "min_count": null,
@@ -1368,19 +1368,19 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#SocialGroupEntity"
+            "https://www.w3.org/ns/ucm#SocialGroupEntity"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#ParticipationEntityConsistencyShape",
+      "iri": "https://www.w3.org/ns/ucm#ParticipationEntityConsistencyShape",
       "severity": "Violation",
       "tier": "Definitional",
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Participation"
+        "https://www.w3.org/ns/ucm#Participation"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
@@ -1388,21 +1388,21 @@
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#ParticipationEntityConsistencyShape",
+          "iri": "https://www.w3.org/ns/ucm#ParticipationEntityConsistencyShape",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "An entity participates through this participation via participatesThrough, but the participation names a different participating entity.",
-          "select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:participatesThrough $this .\n                $this ucm:participatingEntity ?actual .\n                FILTER (?claimant != ?actual)\n            }"
+          "select": "\n            PREFIX ucm: <https://www.w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:participatesThrough $this .\n                $this ucm:participatingEntity ?actual .\n                FILTER (?claimant != ?actual)\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#ParticipationProcessConsistencyShape",
+      "iri": "https://www.w3.org/ns/ucm#ParticipationProcessConsistencyShape",
       "severity": "Violation",
       "tier": "Definitional",
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Participation"
+        "https://www.w3.org/ns/ucm#Participation"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
@@ -1410,33 +1410,33 @@
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#ParticipationProcessConsistencyShape",
+          "iri": "https://www.w3.org/ns/ucm#ParticipationProcessConsistencyShape",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A process lists this participation via hasParticipant, but the participation occurs within a different process.",
-          "select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:hasParticipant $this .\n                $this ucm:occursWithin ?actual .\n                FILTER (?claimant != ?actual)\n            }"
+          "select": "\n            PREFIX ucm: <https://www.w3.org/ns/ucm#>\n            SELECT $this WHERE {\n                ?claimant ucm:hasParticipant $this .\n                $this ucm:occursWithin ?actual .\n                FILTER (?claimant != ?actual)\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#ParticipationShape",
+      "iri": "https://www.w3.org/ns/ucm#ParticipationShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Participation"
+        "https://www.w3.org/ns/ucm#Participation"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [
         {
-          "iri": "https://w3.org/ns/ucm#Participation-role",
+          "iri": "https://www.w3.org/ns/ucm#Participation-role",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Assumed role is not typed as ucm:Role.",
           "paths": [
-            "https://w3.org/ns/ucm#assumesRole"
+            "https://www.w3.org/ns/ucm#assumesRole"
           ],
           "inverse": false,
           "min_count": null,
@@ -1444,16 +1444,16 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Role"
+            "https://www.w3.org/ns/ucm#Role"
           ]
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-process",
+          "iri": "https://www.w3.org/ns/ucm#Participation-process",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A participation occurs within exactly one process.",
           "paths": [
-            "https://w3.org/ns/ucm#occursWithin"
+            "https://www.w3.org/ns/ucm#occursWithin"
           ],
           "inverse": false,
           "min_count": 1,
@@ -1463,12 +1463,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-processType",
+          "iri": "https://www.w3.org/ns/ucm#Participation-processType",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "The process a participation occurs within is not typed as ucm:Process.",
           "paths": [
-            "https://w3.org/ns/ucm#occursWithin"
+            "https://www.w3.org/ns/ucm#occursWithin"
           ],
           "inverse": false,
           "min_count": null,
@@ -1476,16 +1476,16 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Process"
+            "https://www.w3.org/ns/ucm#Process"
           ]
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-entity",
+          "iri": "https://www.w3.org/ns/ucm#Participation-entity",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A participation has exactly one participating entity, which must be a node, not a literal.",
           "paths": [
-            "https://w3.org/ns/ucm#participatingEntity"
+            "https://www.w3.org/ns/ucm#participatingEntity"
           ],
           "inverse": false,
           "min_count": 1,
@@ -1495,12 +1495,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-entityType",
+          "iri": "https://www.w3.org/ns/ucm#Participation-entityType",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Participating entity is not typed as ucm:Entity or a subclass. Assert a UCM type, or validate with OWL RL inference if it is typed in a mapped ontology.",
           "paths": [
-            "https://w3.org/ns/ucm#participatingEntity"
+            "https://www.w3.org/ns/ucm#participatingEntity"
           ],
           "inverse": false,
           "min_count": null,
@@ -1508,17 +1508,17 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Entity"
+            "https://www.w3.org/ns/ucm#Entity"
           ]
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-context",
+          "iri": "https://www.w3.org/ns/ucm#Participation-context",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Participation context is not typed as ucm:SemanticContext.",
           "paths": [
-            "https://w3.org/ns/ucm#participationContext",
-            "https://w3.org/ns/ucm#scopedBy"
+            "https://www.w3.org/ns/ucm#participationContext",
+            "https://www.w3.org/ns/ucm#scopedBy"
           ],
           "inverse": false,
           "min_count": null,
@@ -1526,16 +1526,16 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#SemanticContext"
+            "https://www.w3.org/ns/ucm#SemanticContext"
           ]
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-validFrom",
+          "iri": "https://www.w3.org/ns/ucm#Participation-validFrom",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "validFrom is single-valued and must be xsd:dateTime or xsd:dateTimeStamp.",
           "paths": [
-            "https://w3.org/ns/ucm#validFrom"
+            "https://www.w3.org/ns/ucm#validFrom"
           ],
           "inverse": false,
           "min_count": null,
@@ -1548,12 +1548,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Participation-validTo",
+          "iri": "https://www.w3.org/ns/ucm#Participation-validTo",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "validTo is single-valued and must be xsd:dateTime or xsd:dateTimeStamp.",
           "paths": [
-            "https://w3.org/ns/ucm#validTo"
+            "https://www.w3.org/ns/ucm#validTo"
           ],
           "inverse": false,
           "min_count": null,
@@ -1569,12 +1569,12 @@
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#ParticipationValidityShape",
+      "iri": "https://www.w3.org/ns/ucm#ParticipationValidityShape",
       "severity": "Violation",
       "tier": "Definitional",
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Participation"
+        "https://www.w3.org/ns/ucm#Participation"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
@@ -1582,57 +1582,57 @@
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#ParticipationValidityShape",
+          "iri": "https://www.w3.org/ns/ucm#ParticipationValidityShape",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "Participation validTo precedes validFrom.",
-          "select": "\n            PREFIX ucm: <https://w3.org/ns/ucm#>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n            SELECT $this WHERE {\n                $this ucm:validFrom ?f ; ucm:validTo ?t .\n                FILTER (xsd:dateTime(STR(?t)) < xsd:dateTime(STR(?f)))\n            }"
+          "select": "\n            PREFIX ucm: <https://www.w3.org/ns/ucm#>\n            PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>\n            SELECT $this WHERE {\n                $this ucm:validFrom ?f ; ucm:validTo ?t .\n                FILTER (xsd:dateTime(STR(?t)) < xsd:dateTime(STR(?f)))\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#ProjectionBackingShape",
+      "iri": "https://www.w3.org/ns/ucm#ProjectionBackingShape",
       "severity": "Warning",
       "tier": "Recommended",
       "message": null,
       "target_classes": [],
       "target_subjects_of": [
-        "https://w3.org/ns/ucm#hasClient",
-        "https://w3.org/ns/ucm#hasPatient",
-        "https://w3.org/ns/ucm#hasResident"
+        "https://www.w3.org/ns/ucm#hasClient",
+        "https://www.w3.org/ns/ucm#hasPatient",
+        "https://www.w3.org/ns/ucm#hasResident"
       ],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#ProjectionBackingShape",
+          "iri": "https://www.w3.org/ns/ucm#ProjectionBackingShape",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Convenience projection (hasClient/hasPatient/hasResident) has no backing participation with the matching role.",
-          "select": "\n            PREFIX ucm:  <https://w3.org/ns/ucm#>\n            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n            SELECT $this WHERE {\n                # UNION, not VALUES: SHACL forbids VALUES in SPARQL constraints.\n                { $this ucm:hasClient   ?person . BIND (ucm:ClientRole   AS ?roleClass) }\n                UNION\n                { $this ucm:hasPatient  ?person . BIND (ucm:PatientRole  AS ?roleClass) }\n                UNION\n                { $this ucm:hasResident ?person . BIND (ucm:ResidentRole AS ?roleClass) }\n                FILTER NOT EXISTS {\n                    ?p ucm:participatingEntity ?person ;\n                       ucm:assumesRole/a/rdfs:subClassOf* ?roleClass .\n                    { ?p ucm:occursWithin $this } UNION { $this ucm:hasParticipant ?p }\n                }\n            }"
+          "select": "\n            PREFIX ucm:  <https://www.w3.org/ns/ucm#>\n            PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n            SELECT $this WHERE {\n                # UNION, not VALUES: SHACL forbids VALUES in SPARQL constraints.\n                { $this ucm:hasClient   ?person . BIND (ucm:ClientRole   AS ?roleClass) }\n                UNION\n                { $this ucm:hasPatient  ?person . BIND (ucm:PatientRole  AS ?roleClass) }\n                UNION\n                { $this ucm:hasResident ?person . BIND (ucm:ResidentRole AS ?roleClass) }\n                FILTER NOT EXISTS {\n                    ?p ucm:participatingEntity ?person ;\n                       ucm:assumesRole/a/rdfs:subClassOf* ?roleClass .\n                    { ?p ucm:occursWithin $this } UNION { $this ucm:hasParticipant ?p }\n                }\n            }"
         }
       ]
     },
     {
-      "iri": "https://w3.org/ns/ucm#StatementShape",
+      "iri": "https://www.w3.org/ns/ucm#StatementShape",
       "severity": "Violation",
       "tier": null,
       "message": null,
       "target_classes": [
-        "https://w3.org/ns/ucm#Statement"
+        "https://www.w3.org/ns/ucm#Statement"
       ],
       "target_subjects_of": [],
       "target_objects_of": [],
       "node_kind": null,
       "properties": [
         {
-          "iri": "https://w3.org/ns/ucm#Statement-processType",
+          "iri": "https://www.w3.org/ns/ucm#Statement-processType",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Generating process is not typed as ucm:Process.",
           "paths": [
-            "https://w3.org/ns/ucm#generatedByProcess"
+            "https://www.w3.org/ns/ucm#generatedByProcess"
           ],
           "inverse": false,
           "min_count": null,
@@ -1640,16 +1640,16 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Process"
+            "https://www.w3.org/ns/ucm#Process"
           ]
         },
         {
-          "iri": "https://w3.org/ns/ucm#Statement-context",
+          "iri": "https://www.w3.org/ns/ucm#Statement-context",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Statement declares no semantic context; its interpretation depends on one.",
           "paths": [
-            "https://w3.org/ns/ucm#madeWithinContext"
+            "https://www.w3.org/ns/ucm#madeWithinContext"
           ],
           "inverse": false,
           "min_count": 1,
@@ -1659,12 +1659,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Statement-date",
+          "iri": "https://www.w3.org/ns/ucm#Statement-date",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "A statement is made once: statementDate is single-valued and must be xsd:dateTime or xsd:dateTimeStamp.",
           "paths": [
-            "https://w3.org/ns/ucm#statementDate"
+            "https://www.w3.org/ns/ucm#statementDate"
           ],
           "inverse": false,
           "min_count": null,
@@ -1677,12 +1677,12 @@
           "classes": []
         },
         {
-          "iri": "https://w3.org/ns/ucm#Statement-subjectType",
+          "iri": "https://www.w3.org/ns/ucm#Statement-subjectType",
           "severity": "Warning",
           "tier": "Recommended",
           "message": "Statement subject is not typed as ucm:Participation.",
           "paths": [
-            "https://w3.org/ns/ucm#statementSubject"
+            "https://www.w3.org/ns/ucm#statementSubject"
           ],
           "inverse": false,
           "min_count": null,
@@ -1690,47 +1690,47 @@
           "node_kind": null,
           "datatypes": [],
           "classes": [
-            "https://w3.org/ns/ucm#Participation"
+            "https://www.w3.org/ns/ucm#Participation"
           ]
         }
       ],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#TemporalEntityShape",
+      "iri": "https://www.w3.org/ns/ucm#TemporalEntityShape",
       "severity": "Violation",
       "tier": "Definitional",
       "message": "Temporal context must be an OWL-Time entity, not a literal. Wrap a bare timestamp in a time:Instant.",
       "target_classes": [],
       "target_subjects_of": [],
       "target_objects_of": [
-        "https://w3.org/ns/ucm#enactiveDuring",
-        "https://w3.org/ns/ucm#hasTemporalContext",
-        "https://w3.org/ns/ucm#occursDuring",
-        "https://w3.org/ns/ucm#validDuring"
+        "https://www.w3.org/ns/ucm#enactiveDuring",
+        "https://www.w3.org/ns/ucm#hasTemporalContext",
+        "https://www.w3.org/ns/ucm#occursDuring",
+        "https://www.w3.org/ns/ucm#validDuring"
       ],
       "node_kind": "BlankNodeOrIRI",
       "properties": [],
       "sparql": []
     },
     {
-      "iri": "https://w3.org/ns/ucm#TemporalOrderShape",
+      "iri": "https://www.w3.org/ns/ucm#TemporalOrderShape",
       "severity": "Violation",
       "tier": "Definitional",
       "message": null,
       "target_classes": [],
       "target_subjects_of": [],
       "target_objects_of": [
-        "https://w3.org/ns/ucm#enactiveDuring",
-        "https://w3.org/ns/ucm#hasTemporalContext",
-        "https://w3.org/ns/ucm#occursDuring",
-        "https://w3.org/ns/ucm#validDuring"
+        "https://www.w3.org/ns/ucm#enactiveDuring",
+        "https://www.w3.org/ns/ucm#hasTemporalContext",
+        "https://www.w3.org/ns/ucm#occursDuring",
+        "https://www.w3.org/ns/ucm#validDuring"
       ],
       "node_kind": null,
       "properties": [],
       "sparql": [
         {
-          "iri": "https://w3.org/ns/ucm#TemporalOrderShape",
+          "iri": "https://www.w3.org/ns/ucm#TemporalOrderShape",
           "severity": "Violation",
           "tier": "Definitional",
           "message": "Interval ends before it begins.",
@@ -1739,10 +1739,10 @@
       ]
     }
   ],
-  "shapes_namespace": "https://w3.org/ns/ucm#",
+  "shapes_namespace": "https://www.w3.org/ns/ucm#",
   "shapes_prefix": "ucmsh",
   "prefixes": {
-    "ucm": "https://w3.org/ns/ucm#",
+    "ucm": "https://www.w3.org/ns/ucm#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",

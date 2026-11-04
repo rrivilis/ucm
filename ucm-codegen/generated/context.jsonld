@@ -1,7 +1,7 @@
 {
   "@context": {
     "@version": 1.1,
-    "ucm": "https://w3.org/ns/ucm#",
+    "ucm": "https://www.w3.org/ns/ucm#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "skos": "http://www.w3.org/2004/02/skos/core#",

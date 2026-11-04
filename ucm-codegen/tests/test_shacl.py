@@ -9,7 +9,7 @@ from rdflib.namespace import XSD
 from ucm_codegen.models import Severity, Tier
 from ucm_codegen.shacl import validate_data
 
-UCM = Namespace("https://w3.org/ns/ucm#")
+UCM = Namespace("https://www.w3.org/ns/ucm#")
 EX = Namespace("http://example.org/ucm/")
 
 
@@ -32,7 +32,7 @@ def test_namespace_drift_breaks_the_baseline(regressed_compilation, example_grap
     assert result.tier == Tier.RECOMMENDED
     assert result.focus_node == str(EX["req-1"])
     assert result.value == str(UCM.Accepted)
-    assert result.source_shape == "https://w3.org/ns/ucm#LifecycleState-anchored"
+    assert result.source_shape == "https://www.w3.org/ns/ucm#LifecycleState-anchored"
 
 
 def drop_entity(g: Graph) -> None:

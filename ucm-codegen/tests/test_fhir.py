@@ -91,7 +91,7 @@ def test_resource_types_and_identity(bundle):
         "req-1": "Task",
         "stmt-1": "Observation",   # HousingEligibilityStatement via HousingStatement
     }
-    assert found["req-1"]["meta"]["tag"] == [{"system": "https://w3.org/ns/ucm#", "code": "CoordinationRequest"}]
+    assert found["req-1"]["meta"]["tag"] == [{"system": "https://www.w3.org/ns/ucm#", "code": "CoordinationRequest"}]
 
 
 def test_task_from_coordination_request(bundle):

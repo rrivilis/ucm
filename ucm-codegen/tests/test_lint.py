@@ -10,7 +10,7 @@ from ucm_codegen.pipeline import compile_ir
 
 from .conftest import SHAPES_LINT_TTL
 
-UCMSH = "https://w3.org/ns/ucm#"
+UCMSH = "https://www.w3.org/ns/ucm#"
 
 
 def by_code(compilation, code):
@@ -98,7 +98,7 @@ def split_compilation(tmp_path_factory):
 
 def test_namespace_split_is_one_clear_finding(split_compilation):
     (drift,) = by_code(split_compilation, "namespace-drift")
-    assert drift.subject == "https://w3.org/ns/ucm#"
+    assert drift.subject == "https://www.w3.org/ns/ucm#"
     assert f"declared only under <{MOVED_NAMESPACE}>" in drift.message
     assert drift.message.startswith("47 terms (ActivityFocus, ")  # every UCM term the shapes use
     assert "Align the @prefix" in drift.message
