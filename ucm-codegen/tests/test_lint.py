@@ -92,7 +92,7 @@ def split_compilation(tmp_path_factory):
         ONTOLOGY_TTL[0].read_text(encoding="utf-8").replace(UCM_NAMESPACE, MOVED_NAMESPACE),
         encoding="utf-8",
     )
-    ontology, shapes, shapes_lint = export_ir(tmp, [moved, ONTOLOGY_TTL[1]])
+    ontology, shapes, shapes_lint = export_ir(tmp, [moved])
     return compile_ir([ontology], [shapes], [shapes_lint])
 
 
@@ -100,7 +100,7 @@ def test_namespace_split_is_one_clear_finding(split_compilation):
     (drift,) = by_code(split_compilation, "namespace-drift")
     assert drift.subject == "https://www.w3.org/ns/ucm#"
     assert f"declared only under <{MOVED_NAMESPACE}>" in drift.message
-    assert drift.message.startswith("47 terms (ActivityFocus, ")  # every UCM term the shapes use
+    assert drift.message.startswith("48 terms (ActivityFocus, ")  # every UCM term the shapes use
     assert "Align the @prefix" in drift.message
     assert not by_code(split_compilation, "undeclared-term")  # no per-term flood
 

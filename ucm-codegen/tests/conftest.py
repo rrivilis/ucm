@@ -23,7 +23,8 @@ from ucm_codegen.utils import load_yaml_safe
 PROJECT = Path(__file__).resolve().parents[1]
 SPEC_ROOT = PROJECT.parent
 
-ONTOLOGY_TTL = [SPEC_ROOT / "unified-care-model.ttl", SPEC_ROOT / "ucm-lifecycle-vocabularies.ttl"]
+ONTOLOGY_TTL = [SPEC_ROOT / "unified-care-model.ttl"]
+VOCABULARY_BANNER = "#    Concept schemes\n"
 SHAPES_TTL = [SPEC_ROOT / "ucm-core-shapes.ttl"]
 SHAPES_LINT_TTL = [SPEC_ROOT / "ucm-shapes-lint.ttl"]
 EXAMPLE_TTL = SPEC_ROOT / "ucm-core-shapes-example.ttl"
@@ -79,11 +80,16 @@ def regressed_sources(tmp_path_factory: pytest.TempPathFactory) -> List[Path]:
         ONTOLOGY_TTL[0].read_text(encoding="utf-8"),
         flags=re.DOTALL,
     )
-    vocabulary_text = ONTOLOGY_TTL[1].read_text(encoding="utf-8")
+    # The lifecycle vocabulary lives in the ontology file; split it out so its
+    # ucm: prefix can drift on its own, as it once did in a separate file.
+    head, banner, vocabulary_body = ontology_text.partition(VOCABULARY_BANNER)
+    header = "".join(line for line in head.splitlines(keepends=True) if line.startswith("@prefix"))
+    ontology_text = head
+    vocabulary_text = header + banner + vocabulary_body
     prefix = f"@prefix ucm: <{UCM_NAMESPACE}> ."
-    assert ranges == 1 and prefix in vocabulary_text, "the TTL sources changed shape"
+    assert ranges == 1 and banner and prefix in vocabulary_text, "the TTL sources changed shape"
     ontology = tmp / ONTOLOGY_TTL[0].name
-    vocabulary = tmp / ONTOLOGY_TTL[1].name
+    vocabulary = tmp / "ucm-lifecycle-vocabularies.ttl"
     ontology.write_text(ontology_text, encoding="utf-8")
     vocabulary.write_text(
         vocabulary_text.replace(prefix, f"@prefix ucm: <{DRIFTED_NAMESPACE}> ."), encoding="utf-8"

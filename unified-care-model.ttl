@@ -10,6 +10,7 @@
 @prefix ncbitaxon: <http://purl.obolibrary.org/obo/NCBITaxon#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix time: <http://www.w3.org/2006/time#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @base <https://www.w3.org/ns/ucm#> .
 
 <https://www.w3.org/ns/ucm#> rdf:type owl:Ontology ;
@@ -675,6 +676,44 @@ ucm:CareCoverageGap rdf:type owl:Class ;
                 rdfs:label "Care Coverage Gap" ;
                 rdfs:comment "A condition in which a care coverage requirement is in force but is not satisfied by any applicable in-force care commitment during a specified interval." .
 
+
+#################################################################
+#    Concept schemes
+#################################################################
+
+###  https://www.w3.org/ns/ucm#LifecycleState
+ucm:LifecycleState a skos:ConceptScheme ;
+    dcterms:title "UCM Lifecycle State"@en ;
+    dcterms:description "A state associated with a process during a portion of its lifecycle."@en ;
+    dcterms:created "2026-09-08"^^xsd:date ;
+    dcterms:publisher "MDIX"@en ;
+    skos:prefLabel "Lifecycle State"@en ;
+    skos:definition "The primary state of the care coordination lifecycle."@en ;
+    skos:hasTopConcept
+        ucm:Pending,
+        ucm:Accepted,
+        ucm:Declined .
+
+ucm:Pending a skos:Concept ;
+    skos:inScheme ucm:LifecycleState ;
+    skos:topConceptOf ucm:LifecycleState ;
+    skos:prefLabel "Pending Care Coordination Lifecycle"@en ;
+    skos:altLabel "Pending"@en ;
+    skos:definition "A pending care coordination request." .
+
+ucm:Accepted a skos:Concept ;
+    skos:inScheme ucm:LifecycleState ;
+    skos:topConceptOf ucm:LifecycleState ;
+    skos:prefLabel "Accepted Care Coordination Lifecycle"@en ;
+    skos:altLabel "Accepted"@en ;
+    skos:definition "A care coordination request that has been accepted for ongoing care." .
+
+ucm:Declined a skos:Concept ;
+    skos:inScheme ucm:LifecycleState ;
+    skos:topConceptOf ucm:LifecycleState ;
+    skos:prefLabel "Declined Care Coordination Lifecycle"@en ;
+    skos:altLabel "Declined"@en ;
+    skos:definition "This care request was denied." .
 
 
 

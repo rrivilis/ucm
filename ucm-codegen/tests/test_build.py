@@ -138,7 +138,7 @@ def test_lock_records_what_is_on_disk(tmp_path):
         path = tmp_path / "out" / relative
         assert digest_file(path) == digest, relative
         assert b"\r\n" not in path.read_bytes(), relative  # LF everywhere
-    assert [s["path"].endswith(".ttl") for s in lock.sources["ontology"]] == [True, True]
+    assert [s["path"].endswith(".ttl") for s in lock.sources["ontology"]] == [True]
     assert {e["file"] for e in lock.ir} == {"ucm-ontology.jsonld", "ucm-shapes.jsonld", "ucm-shapes-lint.jsonld"}
     snapshot = json.loads((tmp_path / "ir" / "ucm-ir.json").read_text(encoding="utf-8"))
     assert snapshot["iri"] == "https://www.w3.org/ns/ucm#"

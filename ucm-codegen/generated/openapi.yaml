@@ -15,11 +15,11 @@ info:
     version: "v0.0.1"
     sources:
       - file: "ucm-ontology.jsonld"
-        digest: "sha256:a52cb9dc17258526e20324870e82a29721b59c985258265728c5e2e5374ef9f0"
+        digest: "sha256:9392249aff4c637a7313ccb4a23fb258c111ce2639d9fba1aafa2be62d67a158"
         triples: 385
       - file: "ucm-shapes.jsonld"
-        digest: "sha256:b663999eae7187a018ece3d0458cfabde048ce979a89b1294b0824964a1510d7"
-        triples: 292
+        digest: "sha256:a37a698093c82c9fe7743b13c7b87d583ba9e6fe1f8f26834bb5d233aea65d50"
+        triples: 293
 
 servers:
   - url: "http://localhost:8000/ucm/v1"

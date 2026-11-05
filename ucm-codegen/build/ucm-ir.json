@@ -8,15 +8,15 @@
   "sources": [
     {
       "file": "ucm-ontology.jsonld",
-      "digest": "sha256:a52cb9dc17258526e20324870e82a29721b59c985258265728c5e2e5374ef9f0",
+      "digest": "sha256:9392249aff4c637a7313ccb4a23fb258c111ce2639d9fba1aafa2be62d67a158",
       "triples": 385,
-      "content": "sha256:ba951d2bfdf5071bf7e2cab1609a5a4a4699a4cda59f76958670eebb4ab10eea"
+      "content": "sha256:b3df1a4f5d69bfd601bbf9f2f1958876e1ae79a15644424103a4904270b29c0d"
     },
     {
       "file": "ucm-shapes.jsonld",
-      "digest": "sha256:b663999eae7187a018ece3d0458cfabde048ce979a89b1294b0824964a1510d7",
-      "triples": 292,
-      "content": "sha256:92663c31391c14ce0c832d7612afa1fe276edf135dd37cdd851beae2c28b8b59"
+      "digest": "sha256:a37a698093c82c9fe7743b13c7b87d583ba9e6fe1f8f26834bb5d233aea65d50",
+      "triples": 293,
+      "content": "sha256:cbee96f2bdcb34359ed6606460355f53c5f20144d94039ebb1f240a21ffe24a0"
     }
   ],
   "classes": {
@@ -1740,7 +1740,7 @@
     }
   ],
   "shapes_namespace": "https://www.w3.org/ns/ucm#",
-  "shapes_prefix": "ucmsh",
+  "shapes_prefix": "ucm",
   "prefixes": {
     "ucm": "https://www.w3.org/ns/ucm#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",

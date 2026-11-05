@@ -9,8 +9,8 @@
   7. Meta-validation: both shapes files are valid SHACL (SHACL-for-SHACL).
 
 Usage: python3 test_core_shapes.py <dir>
-<dir> must hold unified-care-model.ttl, ucm-lifecycle-vocabularies.ttl
-(in the https://www.w3.org/ns/ucm# namespace), ucm-core-shapes.ttl,
+<dir> must hold unified-care-model.ttl (in the https://www.w3.org/ns/ucm#
+namespace), ucm-core-shapes.ttl,
 ucm-core-shapes-example.ttl and ucm-shapes-lint.ttl.
 """
 import sys
@@ -40,7 +40,7 @@ def shapes_graph(mutate=None):
 
 def data_graph(extra=""):
     g = Graph()
-    for f in ["unified-care-model.ttl", "ucm-lifecycle-vocabularies.ttl", "ucm-core-shapes-example.ttl"]:
+    for f in ["unified-care-model.ttl", "ucm-core-shapes-example.ttl"]:
         g.parse(f"{D}/{f}", format="turtle")
     if extra:
         g.parse(data=PFX + extra, format="turtle")
