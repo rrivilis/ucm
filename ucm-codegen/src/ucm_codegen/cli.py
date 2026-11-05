@@ -2,7 +2,7 @@
 Command-line interface for ucm-codegen
 
 Usage:
-    ucm-codegen export   -o unified-care-model.ttl -o ucm-lifecycle-vocabularies.ttl -s ucm-core-shapes.ttl -l ucm-shapes-lint.ttl
+    ucm-codegen export   -o unified-care-model.ttl -s ucm-core-shapes.ttl -l ucm-shapes-lint.ttl
     ucm-codegen lint     -o build/ucm-ontology.jsonld -s build/ucm-shapes.jsonld -l build/ucm-shapes-lint.jsonld
     ucm-codegen generate -o build/ucm-ontology.jsonld -s build/ucm-shapes.jsonld --fhir-mapping profiles/ucm-fhir-mapping.yaml
     ucm-codegen build    [-m ucm-build.yaml] [--strict]
@@ -158,7 +158,7 @@ def export(
     (Protégé, ROBOT) works; this command produces a deterministic one.
 
     Example:
-        ucm-codegen export -o unified-care-model.ttl -o ucm-lifecycle-vocabularies.ttl \\
+        ucm-codegen export -o unified-care-model.ttl \\
             -s ucm-core-shapes.ttl -l ucm-shapes-lint.ttl
     """
     console.print("[bold blue]UCM JSON-LD Export[/bold blue]")

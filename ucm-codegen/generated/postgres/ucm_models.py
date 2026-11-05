@@ -30,9 +30,9 @@ from sqlalchemy.types import TypeDecorator
 
 ONTOLOGY_IRI = 'https://www.w3.org/ns/ucm#'
 ONTOLOGY_VERSION = 'v0.0.1'
-REVISION = 'ucm_17366433f527'
-SOURCES = ['sha256:a52cb9dc17258526e20324870e82a29721b59c985258265728c5e2e5374ef9f0',
- 'sha256:b663999eae7187a018ece3d0458cfabde048ce979a89b1294b0824964a1510d7']
+REVISION = 'ucm_8237b6809c56'
+SOURCES = ['sha256:9392249aff4c637a7313ccb4a23fb258c111ce2639d9fba1aafa2be62d67a158',
+ 'sha256:a37a698093c82c9fe7743b13c7b87d583ba9e6fe1f8f26834bb5d233aea65d50']
 
 JSONType = sa.JSON().with_variant(postgresql.JSONB(), "postgresql")
 SurrogateKey = sa.BigInteger().with_variant(sa.Integer(), "sqlite")

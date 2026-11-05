@@ -38,6 +38,16 @@
       "skos:altLabel": "Human"
     },
     {
+      "@id": "https://www.w3.org/ns/ucm#",
+      "@type": "owl:Ontology",
+      "rdfs:comment": "Complete UCM model including Core, Participation, and Domain semantic layers.",
+      "rdfs:label": "Unified Care Model",
+      "owl:versionIRI": {
+        "@id": "ucm:0.0.1"
+      },
+      "owl:versionInfo": "v0.0.1"
+    },
+    {
       "@id": "skos:altLabel",
       "@type": "owl:AnnotationProperty"
     },
@@ -990,16 +1000,6 @@
       "rdfs:range": {
         "@id": "xsd:dateTime"
       }
-    },
-    {
-      "@id": "https://www.w3.org/ns/ucm#",
-      "@type": "owl:Ontology",
-      "rdfs:comment": "Complete UCM model including Core, Participation, and Domain semantic layers.",
-      "rdfs:label": "Unified Care Model",
-      "owl:versionIRI": {
-        "@id": "ucm:0.0.1"
-      },
-      "owl:versionInfo": "v0.0.1"
     }
   ]
 }

@@ -278,6 +278,15 @@ h3 { font-size: 12px; }
 .constraints { margin: 0 0 4px; padding: 0; list-style: none; }
 .constraints li { display: flex; gap: 8px; align-items: baseline; padding: 2px 0; font-size: 11px; }
 .empty { padding: 16px; text-align: center; color: var(--ink-soft); }
+.notice {
+  margin: 0 0 18px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  background: var(--red-bg);
+  color: var(--red-ink);
+  line-height: 1.55;
+}
+.notice strong { display: block; margin-bottom: 2px; }
 .conforms strong { display: block; font-size: 13px; }
 
 /* ---------- Status bar ---------- */
@@ -395,8 +404,8 @@ h3 { font-size: 12px; }
           <table class="list">
             <thead><tr><th>JSON-LD IR</th><th class="num">Triples</th><th>Graph (URDNA2015)</th><th>File bytes</th></tr></thead>
             <tbody>
-              <tr><td class="nowrap">ucm-ontology.jsonld</td><td class="num">385</td><td class="mono" title="sha256:a52cb9dc17258526e20324870e82a29721b59c985258265728c5e2e5374ef9f0">a52cb9dc17258526</td><td class="mono" title="sha256:ba951d2bfdf5071bf7e2cab1609a5a4a4699a4cda59f76958670eebb4ab10eea">ba951d2bfdf5071b</td></tr>
-              <tr><td class="nowrap">ucm-shapes.jsonld</td><td class="num">292</td><td class="mono" title="sha256:b663999eae7187a018ece3d0458cfabde048ce979a89b1294b0824964a1510d7">b663999eae7187a0</td><td class="mono" title="sha256:92663c31391c14ce0c832d7612afa1fe276edf135dd37cdd851beae2c28b8b59">92663c31391c14ce</td></tr>
+              <tr><td class="nowrap">ucm-ontology.jsonld</td><td class="num">385</td><td class="mono" title="sha256:9392249aff4c637a7313ccb4a23fb258c111ce2639d9fba1aafa2be62d67a158">9392249aff4c637a</td><td class="mono" title="sha256:b3df1a4f5d69bfd601bbf9f2f1958876e1ae79a15644424103a4904270b29c0d">b3df1a4f5d69bfd6</td></tr>
+              <tr><td class="nowrap">ucm-shapes.jsonld</td><td class="num">293</td><td class="mono" title="sha256:a37a698093c82c9fe7743b13c7b87d583ba9e6fe1f8f26834bb5d233aea65d50">a37a698093c82c9f</td><td class="mono" title="sha256:cbee96f2bdcb34359ed6606460355f53c5f20144d94039ebb1f240a21ffe24a0">cbee96f2bdcb3435</td></tr>
             </tbody>
           </table>
         </div>
@@ -405,7 +414,7 @@ h3 { font-size: 12px; }
         <div class="scroll">
           <table class="list">
             <tbody>
-<tr><td class="nowrap">IR root (119 nodes)</td><td class="mono break">sha256:0c55326b22efe08e3f3314a438f736c7b20571e5ff6f3b736e4be8ef566cafeb</td></tr>              <tr><td class="nowrap">Toolchain</td><td class="mono break">sha256:b1ac64741f50dd3cc49b666e7537b54c1da14eb9a9de37401efe24636b899fc2</td></tr>
+<tr><td class="nowrap">IR root (119 nodes)</td><td class="mono break">sha256:f227ad1022f7923376ade1250a211558bb33367dc40e4e5833b37accc5396877</td></tr>              <tr><td class="nowrap">Toolchain</td><td class="mono break">sha256:e54884a806f8eaa6840bb8662976822cb53440658ba00eabc5de3773ae38ec36</td></tr>
             </tbody>
           </table>
         </div>
@@ -414,7 +423,7 @@ h3 { font-size: 12px; }
       <!-- ===================== Changes ===================== -->
       <section class="pane" id="changes">
         <h1>Changes</h1>
-        <p class="lede">No changes since the previous build (IR root <span class="mono">0c55326b22ef</span>). Every node and output has the same content digest.</p>
+        <p class="lede">No changes since the previous build (IR root <span class="mono">f227ad1022f7</span>). Every node and output has the same content digest.</p>
       </section>
 
       <!-- ===================== Lint ===================== -->
@@ -445,7 +454,7 @@ h3 { font-size: 12px; }
               <tr data-level="Info"><td><span class="pill Info">Info</span></td><td class="nowrap mono">orphan-class</td><td class="mono break">ucm:HousingDomain</td><td class="wide">No subclasses, properties or shapes refer to this class.</td></tr>
               <tr data-level="Info"><td><span class="pill Info">Info</span></td><td class="nowrap mono">orphan-class</td><td class="mono break">ucm:PublicHealthDomain</td><td class="wide">No subclasses, properties or shapes refer to this class.</td></tr>
               <tr data-level="Info"><td><span class="pill Info">Info</span></td><td class="nowrap mono">orphan-class</td><td class="mono break">ucm:SocialCareDomain</td><td class="wide">No subclasses, properties or shapes refer to this class.</td></tr>
-              <tr data-level="Info"><td><span class="pill Info">Info</span></td><td class="nowrap mono">shape-without-range</td><td class="mono break">ucm:hasCareTrajectoryContext</td><td class="wide">ucmsh:CareTrajectoryShape requires sh:class ucm:CareTrajectoryContext but the property declares no rdfs:range.</td></tr>
+              <tr data-level="Info"><td><span class="pill Info">Info</span></td><td class="nowrap mono">shape-without-range</td><td class="mono break">ucm:hasCareTrajectoryContext</td><td class="wide">ucm:CareTrajectoryShape requires sh:class ucm:CareTrajectoryContext but the property declares no rdfs:range.</td></tr>
             </tbody>
           </table>
         </div>
@@ -1856,7 +1865,7 @@ h3 { font-size: 12px; }
       <!-- ===================== Postgres ===================== -->
       <section class="pane" id="postgres">
         <h1>Postgres</h1>
-        <p class="lede">Revision <span class="mono">ucm_17366433f527</span>. One table per root class (single-table inheritance on <span class="mono">type</span>); references are IRIs without foreign keys; only the Definitional tier is enforced.</p>
+        <p class="lede">Revision <span class="mono">ucm_8237b6809c56</span>. One table per root class (single-table inheritance on <span class="mono">type</span>); references are IRIs without foreign keys; only the Definitional tier is enforced.</p>
         <div class="scroll">
           <table class="list">
             <thead><tr><th>Table</th><th>Columns</th><th>Checks</th><th class="num">Classes</th></tr></thead>
@@ -2125,7 +2134,7 @@ h3 { font-size: 12px; }
           <table class="list">
             <thead><tr><th>File</th><th>sha256</th></tr></thead>
             <tbody>
-<tr><td class="mono"><a href="context.jsonld">context.jsonld</a></td><td class="mono muted" title="sha256:308debf0457b9009eaf23a8fba04baaad43a3f033697a4f90df0fe15085cb7a0">308debf0457b9009</td></tr><tr><td class="mono"><a href="fhir/ucm_fhir_adapter.py">fhir/ucm_fhir_adapter.py</a></td><td class="mono muted" title="sha256:578648827f63d5e4377d83b295a270df19c0ed98af62f9a5af3e3a48499422b4">578648827f63d5e4</td></tr><tr><td class="mono"><a href="openapi.yaml">openapi.yaml</a></td><td class="mono muted" title="sha256:57d63bb972352e07a2726b1feea81b87dd8f0ba7240417838202e2193378e3e8">57d63bb972352e07</td></tr><tr><td class="mono"><a href="postgres/alembic.ini">postgres/alembic.ini</a></td><td class="mono muted" title="sha256:8358d7425c24090f24a11a31f2712578c5b18822ffef72d6cf975b0cbafc631b">8358d7425c24090f</td></tr><tr><td class="mono"><a href="postgres/migrations/env.py">postgres/migrations/env.py</a></td><td class="mono muted" title="sha256:d213ecab0d2c115b98f7228e8f680286278a5d4be6f437b9aa963ec1fedcdcbc">d213ecab0d2c115b</td></tr><tr><td class="mono"><a href="postgres/migrations/script.py.mako">postgres/migrations/script.py.mako</a></td><td class="mono muted" title="sha256:c20f6ab92d4ed36d77fbccb82bc410cd2ced42f2c162eebb43ddd45ae93dd90e">c20f6ab92d4ed36d</td></tr><tr><td class="mono"><a href="postgres/migrations/versions/ucm_17366433f527_ucm_0_0_1.py">postgres/migrations/versions/ucm_17366433f527_ucm_0_0_1.py</a></td><td class="mono muted" title="sha256:7b75c15732724c27d2ed6519d538ed4c381780e0efe39b26def68e822af1966c">7b75c15732724c27</td></tr><tr><td class="mono"><a href="postgres/ucm_models.py">postgres/ucm_models.py</a></td><td class="mono muted" title="sha256:9918dcb4747018451d3143b7e357b6b854de4e14d98e9142bba63e6646761fa1">9918dcb474701845</td></tr><tr><td class="mono"><a href="report.html">report.html</a></td><td class="mono muted" title="">(this file)</td></tr>            </tbody>
+<tr><td class="mono"><a href="context.jsonld">context.jsonld</a></td><td class="mono muted" title="sha256:6d1bddeb223cbaf8c87b429e4fb4e5d74e85e61f3bd6a9ff6e2ae3a8b4d7e8d5">6d1bddeb223cbaf8</td></tr><tr><td class="mono"><a href="fhir/ucm_fhir_adapter.py">fhir/ucm_fhir_adapter.py</a></td><td class="mono muted" title="sha256:f2c65ca0394e566cd7fbe9c0b47f600272b29cfd5b960c77ac227b0bbed4f736">f2c65ca0394e566c</td></tr><tr><td class="mono"><a href="openapi.yaml">openapi.yaml</a></td><td class="mono muted" title="sha256:7853c7d370604077dc1d33f31f1019c4de2da87ed429fd53b1d80e4704cd0fd7">7853c7d370604077</td></tr><tr><td class="mono"><a href="postgres/alembic.ini">postgres/alembic.ini</a></td><td class="mono muted" title="sha256:8358d7425c24090f24a11a31f2712578c5b18822ffef72d6cf975b0cbafc631b">8358d7425c24090f</td></tr><tr><td class="mono"><a href="postgres/migrations/env.py">postgres/migrations/env.py</a></td><td class="mono muted" title="sha256:d213ecab0d2c115b98f7228e8f680286278a5d4be6f437b9aa963ec1fedcdcbc">d213ecab0d2c115b</td></tr><tr><td class="mono"><a href="postgres/migrations/script.py.mako">postgres/migrations/script.py.mako</a></td><td class="mono muted" title="sha256:c20f6ab92d4ed36d77fbccb82bc410cd2ced42f2c162eebb43ddd45ae93dd90e">c20f6ab92d4ed36d</td></tr><tr><td class="mono"><a href="postgres/migrations/versions/ucm_8237b6809c56_ucm_0_0_1.py">postgres/migrations/versions/ucm_8237b6809c56_ucm_0_0_1.py</a></td><td class="mono muted" title="sha256:9af9f7c409bff12c69b6b4432d0014699c29751760643820763d38124f754f3c">9af9f7c409bff12c</td></tr><tr><td class="mono"><a href="postgres/ucm_models.py">postgres/ucm_models.py</a></td><td class="mono muted" title="sha256:6c2c992481d48c49b0822a9593a41f40b06933994bed82f142c3195ee3ea612e">6c2c992481d48c49</td></tr><tr><td class="mono"><a href="report.html">report.html</a></td><td class="mono muted" title="">(this file)</td></tr>            </tbody>
           </table>
         </div>
       </section>
