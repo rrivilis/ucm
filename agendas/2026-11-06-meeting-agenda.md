@@ -9,6 +9,7 @@
 # Issue Discussion
 * adoption paths (rr) [from prior week]
 * batch of questions on model https://github.com/w3c-cg/ucm/issues/45 [Ken]
+* persona runtimes with Solid Pods https://github.com/w3c-cg/ucm/issues/50 [@eric-jahn]
 
 
 
