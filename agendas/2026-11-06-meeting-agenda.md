@@ -2,8 +2,8 @@
 * [standing item] we now have Github team management access from w3c
   * let @eric-jahn know if you need an invite
   * we can assign issues and pull request
-* proposal for workbench/implementations page (rr)
-* namespace fixes - codegen updated
+* proposal for workbench/implementations page https://github.com/w3c-cg/ucm/issues/41 (rr)
+* namespace fixes - codegen updated https://github.com/w3c-cg/ucm/issues/47 [@eric-jahn]
 * UCM logo
 
 # Issue Discussion
